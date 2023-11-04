@@ -183,8 +183,10 @@ def S1():
 	kt = random.choice(['com.facebook.katana','com.facebook.orca','com.facebook.mlite'])
 	fbcr = random.choice(['o2 - de', 'Verizon - us','MY CELCOM','Vodafone - uk','null','DTAC','IND airtel','Nepal Telecom'])
 	device02 = random.choice(['RMX3177','RMX0164','RMX8506','RMX2160','RMX0449','RMX4056','RMX6694','RMX6198','RMX1295','RMX9268','RMX1103','RMX0178','RMX8912','RMX1859','RMX3594','RMX7124','RMX2157','RMX2358','RMX8973','RMX1541','RMX6895','RMX6342','RMX1185','RMX6202','RMX1831','RMX129','RMX9715','RMX0359','RMX1113','RMX6558','RMX0943','RMX7964','RMX8232','RMX0932','RMX2240','RMX7295','RMX2883','RMX0788','RMX1661','RMX9259','RMX3284','RMX6899','RMX1711','RMX3967','RMX4942','RMX4673','RMX4560','RMX0070','RMX8875','RMX5378'])
+	device03 = random.choice(['11 Lite 5G NE','11i HyperCharge 5G','12','12 Lite','12 Pro','12 Pro Dimensity','12S','12S Pro','12S Ultra','12T','12T Pro','12X','13','13 Lite','13 Pro','13 Ultra','6','8','Black Shark','Black Shark 2','Black Shark 2 Pro','Black Shark 2Pro','Black Shark 3','Black Shark 3 5G','Black Shark 3 Pro','Black Shark 3 Pro 5G','Black Shark 3S','Black Shark 4','Black Shark 4 Pro','Black Shark 5','Black Shark 5 Pro'])
+	device04 = random.choice(['Infinix','Nokia','Vivo','Tecno','OnePlus','iPhone','Samsung','QMobile','Archos','TCL','HTC','LGE','bq','Google','Motrola','Xoaimi','Readmi','Realme','Huawie','Sony'])
 	s= "[FBAN/FB4A;FBAV/"+str(random.randint(111,999))+'.0.0.'+str(random.randrange(9,99))+str(random.randint(111,999)) +";FBBV/"+str(random.randint(111111111,999999999))
-	e = ";[FBAN/FB4A;FBAV/266.0.0.56.124;FBBV/209027763;FBDM/{density=2.625,width=1080,height=2094};FBLC/"+en+";FBRV/209644275;FBCR/"+fbcr+";FBMF/Realme;FBBD/Realme;FBPN/"+kt+";FBDV/"+device02+";FBSV/10;FBOP/1;FBCA/arm64-v8a:;]"
+	e = ";[FBAN/FB4A;FBAV/266.0.0.56.124;FBBV/209027763;FBDM/{density=2.625,width=1080,height=2094};FBLC/"+en+";FBRV/209644275;FBCR/"+fbcr+";FBMF/"+device04+";FBBD/"+device04+";FBPN/"+kt+";FBDV/"+device03+";FBSV/10;FBOP/1;FBCA/arm64-v8a:;]"
 	ua = s + e	
 	return ua
 
