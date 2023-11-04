@@ -178,6 +178,17 @@ for xd in range(5000):
 gt = random.choice(['V20','V20SE','V25','V19','X50','Y31'])
 
 
+def S1():
+	en = random.choice(['en_US','en_GB','en_PK','ru_RU','de_DE','th_TH','en_BD','en_IN','en_AF'])
+	kt = random.choice(['com.facebook.katana','com.facebook.orca','com.facebook.mlite'])
+	fbcr = random.choice(['o2 - de', 'Verizon - us','MY CELCOM','Vodafone - uk','null','DTAC','IND airtel','Nepal Telecom'])
+	device02 = random.choice(['RMX3177','RMX0164','RMX8506','RMX2160','RMX0449','RMX4056','RMX6694','RMX6198','RMX1295','RMX9268','RMX1103','RMX0178','RMX8912','RMX1859','RMX3594','RMX7124','RMX2157','RMX2358','RMX8973','RMX1541','RMX6895','RMX6342','RMX1185','RMX6202','RMX1831','RMX129','RMX9715','RMX0359','RMX1113','RMX6558','RMX0943','RMX7964','RMX8232','RMX0932','RMX2240','RMX7295','RMX2883','RMX0788','RMX1661','RMX9259','RMX3284','RMX6899','RMX1711','RMX3967','RMX4942','RMX4673','RMX4560','RMX0070','RMX8875','RMX5378'])
+	s= "[FBAN/FB4A;FBAV/"+str(random.randint(111,999))+'.0.0.'+str(random.randrange(9,99))+str(random.randint(111,999)) +";FBBV/"+str(random.randint(111111111,999999999))
+	e = ";[FBAN/FB4A;FBAV/266.0.0.56.124;FBBV/209027763;FBDM/{density=2.625,width=1080,height=2094};FBLC/"+en+";FBRV/209644275;FBCR/"+fbcr+";FBMF/Realme;FBBD/Realme;FBPN/"+kt+";FBDV/"+device02+";FBSV/10;FBOP/1;FBCA/arm64-v8a:;]"
+	ua = s + e	
+	return ua
+
+
 ok = []
 cp = []
 f2 = []
@@ -759,7 +770,7 @@ class crack:
                 head={
                     'x-fb-connection-quality':'EXCELLENT',
                     'x-fb-connection-type':'MOBILE.LTE',
-                    'user-agent':ua_string,
+                    'user-agent':S1(),
                     'x-tigon-is-retry':'False',
                     'x-fb-http-engine':'Liger',
                     'x-fb-client-ip':'True',
