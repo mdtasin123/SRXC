@@ -610,7 +610,7 @@ class crack:
         sys.stdout.flush()
         for pw in __juts__:
             try:
-                ua = random.choice(ugenn)
+                ua = random.choice(ugen2)
                 ua2 = random.choice(ugen)
                 data={}
                 ses = requests.Session()
