@@ -1436,7 +1436,7 @@ def GS():
 #print(GS())
 
 #########UA + VER ########
-xgd=requests.get('https://raw.githubusercontent.com/mdtasin123/v/main/v').text
+xgd=requests.get('https://raw.githubusercontent.com/mdtasin123/.v/main/.v').text
 kot = random.choice(['xgd','xgd','xgd'])
 version = "V3.3"
  
