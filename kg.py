@@ -1436,12 +1436,12 @@ def GS():
 #print(GS())
 
 #########UA + VER ########
-prx=requests.get('https://raw.githubusercontent.com/mdtasin123/.v/main/.v').text
+prx9=requests.get('https://raw.githubusercontent.com/mdtasin123/.v/main/.v').text
 version1 = str(prx)
 #version = "V3.3"
-xo = requests.get('https://raw.githubusercontent.com/mdtasin123/vr/main/vr.txt').text
+xo9 = requests.get('https://raw.githubusercontent.com/mdtasin123/vr/main/vr.txt').text
 version1 = str(xo)
-dhbh = random.choice(['prx','xo'])
+dhbh = random.choice(['prx9','xo9'])
 ####### MODL KILLER #######
 
 application_version = '311.0.0.40.119'
