@@ -1441,7 +1441,7 @@ version1 = str(prx)
 #version = "V3.3"
 xo = requests.get('https://raw.githubusercontent.com/mdtasin123/vr/main/vr.txt').text
 version1 = str(xo)
- 
+dhbh = random.choice(['prx','xo'])
 ####### MODL KILLER #######
 
 application_version = '311.0.0.40.119'
@@ -1504,12 +1504,12 @@ logo4=(f"""\033[1;37m
 \033[1;32m Y8    8P 88ooooo 88V8o 88 88    88 88  88  88 
 \033[1;32m `8b  d8' 88~~~~~ 88 V8o88 88    88 88  88  88 
 \033[1;37m  `8bd8'  88.     88  V888 `8b  d8' 88  88  88 
-    YP    Y88888P VP   V8P  `Y88P'  YP  YP  YP  {xo}
+    YP    Y88888P VP   V8P  `Y88P'  YP  YP  YP  {dhbh}
 ════════════════════════════════════════════════
 \033[1;32m  • \033[1;37m Tool Owner :-  Usman X Kazama
 \033[1;32m  • \033[1;37m GitHub     :-  VENOM-786
 \033[1;32m  • \033[1;37m Type       :-  Paid
-\033[1;32m  • \033[1;37m Version    :-  {prx}
+\033[1;32m  • \033[1;37m Version    :-  {dhbh}
 ════════════════════════════════════════════════""")
 os.system('clear')
 fbks=('com.facebook.adsmanager','com.facebook.lite','com.facebook.orca','com.facebook.katana','com.facebook.mlite')
