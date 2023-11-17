@@ -1472,6 +1472,7 @@ for xffd in range(10000):
 	ugen2.append(uaku)
 #-_-_-_--_-_-_-_-_6_-_6_-_-_6_6_6
 #-$6$-_-$-$-$76$6$6$-$-$
+for t in range(10000):
 	aa='Mozilla/5.0 (iPhone; CPU iPhone OS 12_4 like Mac OS X)'
 	b=random.choice(['6','7','8','9','10','11','12'])
 	c=' en-us; GT-'
@@ -1486,7 +1487,7 @@ for xffd in range(10000):
 	l='Mobile/15E148 Safari/605.1'
 	uaku2=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
 	ugen2.append(uaku2)
-
+for gh in range(10000):
     aa='Mozilla/5.0 (Linux; U; Android'
     b=random.choice(['5','6','7','8','9','10','11','12'])
     if b in ['5', '6', '7', '8', '9']:
