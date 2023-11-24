@@ -72,7 +72,7 @@ try:
 except: pass
 
 
-open('devils-OK.txt', 'a')
+open('DEVILS-OK-COKI.TXT', 'a')
 try:
     os.mkdir('/sdcard/DEVILS-IDS')
 except:
