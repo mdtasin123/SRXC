@@ -71,7 +71,7 @@ try:
 		usr.append(us)
 except: pass
 
-open('devil-ok.txt', 'a')
+open('ok.txt', 'a')
 
 try:
     os.mkdir('/sdcard/DEVILS-IDS')
@@ -1175,7 +1175,7 @@ def ram1(uid,pwx,tl):
 				cid = coki[65:80]
 				print('\033[1;92m[DEVILS-OK] '+cid+' | '+ps+'\033[1;32m')
 				#print('\033[1;92m[DEVILS-OK] '+cid+'|'+ps+'|'+coki+'\033[1;32m')
-				open('devil-ok.txt', 'a').write(cid+'|'+ps+'|'+coki+'\n')
+				open('ok.txt', 'a').write(cid+'|'+ps+'|'+coki+'\n')
 				oks.append(uid)
 				#cek_apk(session,coki)
 				break
@@ -1254,7 +1254,7 @@ def ram2(uid,pwx,tl):
 				cid = coki[151:166]
 				print('\033[1;92m[DEVILS-OK] '+cid+' | '+ps+'\033[1;32m')
 				#print('\033[1;92m[DEVILS-OK] '+cid+'|'+ps+'|'+coki+'\033[1;32m')
-				open('devil-ok.txt', 'a').write(cid+'|'+ps+'|'+coki+'\n')
+				open('ok.txt', 'a').write(cid+'|'+ps+'|'+coki+'\n')
 				oks.append(uid)
 				#cek_apk(session,coki)
 				break
@@ -1332,7 +1332,7 @@ def ram3(uid,pwx,tl):
 				cid = coki[151:166]
 				print('\033[1;92m[DEVILS-OK] '+cid+' | '+ps+'\033[1;32m')
 				#print('\033[1;92m[DEVILS-OK] '+cid+'|'+ps+'|'+coki+'\033[1;32m')
-				open('devil-ok.txt', 'a').write(cid+'|'+ps+'|'+coki+'\n')
+				open('ok.txt', 'a').write(cid+'|'+ps+'|'+coki+'\n')
 				oks.append(uid)
 				#cek_apk(session,coki)
 				break
@@ -1404,7 +1404,7 @@ def ram4(uid,pwx,tl):
 				cid = coki[151:166]
 				print('\033[1;92m[DEVILS-OK] '+cid+' | '+ps+'\033[1;32m')
 				#print('\033[1;92m[DEVILS-OK] '+cid+'|'+ps+'|'+coki+'\033[1;32m')
-				open('devil-ok.txt', 'a').write(cid+'|'+ps+'|'+coki+'\n')
+				open('ok.txt', 'a').write(cid+'|'+ps+'|'+coki+'\n')
 				oks.append(uid)
 				#cek_apk(session,coki)
 				break
@@ -1483,7 +1483,7 @@ def ram5(uid,pwx,tl):
 				cid = coki[151:166]
 				print('\033[1;92m[DEVILS-OK] '+cid+' | '+ps+'\033[1;32m')
 				#print('\033[1;92m[DEVILS-OK] '+cid+'|'+ps+'|'+coki+'\033[1;32m')
-				open('devil-ok.txt', 'a').write(cid+'|'+ps+'|'+coki+'\n')
+				open('ok.txt', 'a').write(cid+'|'+ps+'|'+coki+'\n')
 				oks.append(uid)
 				#cek_apk(session,coki)
 				break
