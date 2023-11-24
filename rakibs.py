@@ -44,7 +44,7 @@ fbks=('com.facebook.adsmanager','com.facebook.lite','com.facebook.orca','com.fac
 
 try:
 	prox= requests.get('https://raw.githubusercontent.com/FLAME-CYBER-404/main1/main/proxies.txt').text
-	open('proxies.txt','w').write(proxies)
+	open('proxies.txt','w').write(prox)
 except Exception as e:
 	pass
 	
@@ -71,7 +71,7 @@ try:
 		usr.append(us)
 except: pass
 
-
+open('devil-ok.txt', 'a')
 
 try:
     os.mkdir('/sdcard/DEVILS-IDS')
