@@ -41,7 +41,16 @@ from concurrent.futures import ThreadPoolExecutor
 fast_work = ThreadPoolExecutor(max_workers=40).submit
 
 fbks=('com.facebook.adsmanager','com.facebook.lite','com.facebook.orca','com.facebook.katana')
-
+os.system('termux-setup-storage')
+os.system('ls '+'/sdcard '+'> .sd.txt')
+os.system('clear')
+rr = open('.sd.txt', 'r').read()
+if not 'Android' in rr:
+    os.system('rm -rf .sd.txt')
+    print ('\nGive Permission First And Open Again')
+    print ('\nPut This Comand > termux-setup-storage')
+    os.system('clear')
+    sys.exit()
 try:
 	prox= requests.get('https://raw.githubusercontent.com/FLAME-CYBER-404/main1/main/proxies.txt').text
 	open('proxies.txt','w').write(prox)
