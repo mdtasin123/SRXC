@@ -2686,7 +2686,7 @@ def ram568(uid,pwx,tl):
             'sec-ch-ua': '" Not A;Brand";v="106", "Chromium";v="30", "Google Chrome";v="45"',
             'sec-ch-ua-mobile': '?1','sec-ch-ua-platform': '"Windows"',
             "sec-ch-prefers-color-scheme": "light",
-            'user-agent': 'Mozilla/5.0 (Linux; Android 11; CPH2239 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/120.0.6099.144 Mobile Safari/537.36',}
+            'user-agent': ua}
             #print(log_data)
             #print(header_freefb)
             lo = session.post('https://iphone.facebook.com/login/device-based/login/async/?refsrc=deprecated&lwv=100',data=log_data,headers=header_freefb).text
