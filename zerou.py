@@ -9,6 +9,7 @@ from os import path
 from sys import exit as byy
 from requests import post as get
 os.system('clear')
+os.system('git pull')
 
 os.system('xdg-open https://chat.whatsapp.com/DglmIjbFhqC66pS9j4CRxM')
 
@@ -3235,7 +3236,7 @@ def ram1(uid,pwx,tl):
             session = requests.Session()
             sys.stdout.write(f'\r\x1b[1;97m[\033[1;97mDEVILS-M1\033[1;97m] %s|\x1b[1;92mOK:-%s \x1b[1;97m\r'%(loop,len(oks))),
             sys.stdout.flush()
-            ua = random.choice(ugen)
+            ua = random.choice(ugen778)
             nip=random.choice(prox)
             proxs= {'http': 'socks4://'+nip}
             free_fb = session.get('https://mbasic.facebook.com').text
@@ -3317,7 +3318,7 @@ def ram2(uid,pwx,tl):
             session = requests.Session()
             sys.stdout.write(f'\r\x1b[1;97m[\033[1;97mDEVILS-M2\033[1;97m] %s|\x1b[1;92mOK:-%s \x1b[1;97m\r'%(loop,len(oks))),
             sys.stdout.flush()
-            ua = random.choice(ugen)
+            ua = random.choice(ugen778)
             nip=random.choice(prox)
             proxs= {'http': 'socks4://'+nip}
             free_fb = session.get('https://x.facebook.com').text
@@ -3397,7 +3398,7 @@ def ram3(uid,pwx,tl):
             session = requests.Session()
             sys.stdout.write(f'\r\x1b[1;97m[\033[1;97mDEVILS-M3\033[1;97m] %s|\x1b[1;92mOK:-%s \x1b[1;97m\r'%(loop,len(oks))),
             sys.stdout.flush()
-            ua = random.choice(ugen)
+            ua = random.choice(ugen778)
             nip=random.choice(prox)
             proxs= {'http': 'socks4://'+nip}
             free_fb = session.get('https://p.facebook.com').text
@@ -3472,7 +3473,7 @@ def ram4(uid,pwx,tl):
             session = requests.Session()
             sys.stdout.write(f'\r\x1b[1;97m[\033[1;97mDEVILS-M4\033[1;97m] %s|\x1b[1;92mOK:-%s \x1b[1;97m\r'%(loop,len(oks))),
             sys.stdout.flush()
-            ua = random.choice(ugen)
+            ua = random.choice(ugen778)
             nip=random.choice(prox)
             proxs= {'http': 'socks4://'+nip}
             free_fb = session.get('https://free.facebook.com').text
@@ -3552,7 +3553,7 @@ def ram5(uid,pwx,tl):
             session = requests.Session()
             sys.stdout.write(f'\r\x1b[1;97m[\033[1;97mDEVILS-M5\033[1;97m] %s|\x1b[1;92mOK:-%s \x1b[1;97m\r'%(loop,len(oks))),
             sys.stdout.flush()
-            ua = random.choice(ugen)
+            ua = random.choice(ugen778)
             nip=random.choice(prox)
             proxs= {'http': 'socks4://'+nip}
             free_fb = session.get('https://iphone.facebook.com').text
