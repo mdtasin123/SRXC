@@ -459,15 +459,17 @@ def generate_custom_user_agent():
     selected_android_version = random.choice(android_versions)
 
     manufacturers = [
-        "TECNO", "Samsung", "Xiaomi", 
+        "TECNO", "Samsung", "Xiaomi", "Oppo", #"Realme", 
        
     ]
     selected_manufacturer = random.choice(manufacturers)
 
     android_models = {
-        "TECNO": ["KE5", "Pova 5 Pro", "Spark 9T", "Spark 20C"],
+        "TECNO": ["KE5", "Pova 5 Pro", "Spark 9T", "Spark 20C", "Camon 20 Pro 5G"],
         "Samsung": ["Galaxy S21", "Galaxy Note 20", "Galaxy A52"],
         "Xiaomi": ["Redmi Note 10", "POCO X3"],
+        #"Realme": ["RMX3782", "RMX3840", "RMX3771", "RMX3663", "RMX3396"],
+        "Oppo": ["Reno 8T 5G", "A78 5G", "A15s", "A18", "Reno 10 Pro+ 5G"],
         }
 
     selected_model = random.choice(android_models.get(selected_manufacturer, []))
@@ -476,6 +478,8 @@ def generate_custom_user_agent():
         "TECNO": "TecnoDevice",
         "Samsung": "SamsungDevice",
         "Xiaomi": "XiaomiDevice",
+        #"Realme": "RealmeDevice",
+        "Oppo": "RealmeDevice",
        
     }
 
