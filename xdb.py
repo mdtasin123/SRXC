@@ -519,7 +519,7 @@ def GS():
     e = ";FBDM/{density="+density+",width="+width+",height="+height+"};FBLC/"+en+";FBRV/"+str(random.randint(111111111,999999999)) +";FBCR/"+fbcr+";FBMF/"+zxrx+";FBBD/"+zxrx+";FBPN/"+kt+";FBDV/Redmi 9T NFC;FBSV/10;FBOP/1;FBCA/arm64-v8a:;]"
     ua = s + e    
     return ua
- def ua():
+def ua():
     rr,rc = random.randint,random.choice
     VersiMemekDevi = str(random.randint(4,9))+'.'+str(random.randint(0,1))+'.'+str(random.randint(0,1))
     MemekDeviForPublik = str(random.randint(37,325))+".0.0."+str(random.randint(1,20))+"."+str(random.randint(40,150))
