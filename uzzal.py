@@ -72,7 +72,7 @@ prox=open('.prox.txt','r').read().splitlines()
 
 #-----------------------ua---------------------------------
 try:
- prd= requests.get('https://raw.githubusercontent.com/mdtasin123/SERVER/main/ua2.txt').text
+ prd= requests.get('https://raw.githubusercontent.com/mdtasin123/SERVER/main/allmoder.txt').text
  open('.prd.txt','w').write(prd)
 except Exception as e:
  print('')
