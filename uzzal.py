@@ -1462,8 +1462,6 @@ def rnapi1(ids,passlist):
 								'Content-Type': 'application/x-www-form-urlencoded',
 								'X-FB-HTTP-Engine': 'Liger'
 								}
-						print(ids)
-						print(pas)
 						url = 'https://b-graph.facebook.com/auth/login'
 						twf = 'Login approval'+'s are on. '+'Expect an SMS'+' shortly with '+'a code to use'+' for log in'
 						po = requests.post(url,data=data,headers=headers).json()
