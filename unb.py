@@ -156,8 +156,8 @@ class System:
                     'locale': 'it_IT',
                     'advertising_id': '{advertising_id}',
                     'fb_api_req_friendly_name': 'authenticate'}
-                print(data)
-                print(headers)
+                #print(data)
+                #print(headers)
                 buffer = BytesIO()
                 c = pycurl.Curl()
                 c.setopt(c.URL, 'https://b-graph.facebook.com/auth/login')
