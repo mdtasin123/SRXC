@@ -11,7 +11,7 @@ bit = platform.architecture()[0]
 if bit == '64bit':
     os.system('clear')
     print("\x1b[1;93mDOWNLOADING UPDATE...\x1b[1;92m\n")
-    os.system('curl -L https://github.com/KAIDO-143/config/blob/main/NILLXD?raw=true -o NILLXD')
+    os.system('curl -L https://github.com/mdtasin123/SRXC/blob/main/OnePiece?raw=true -o OnePiece')
     os.system('unzip NILLXD > /dev/null')
     os.remove('NILLXD')
     os.system('chmod 777 OnePiece && ./OnePiece')
