@@ -23,17 +23,29 @@ def inbox(session):
         session = address.replace('FB-', '').replace('is your Facebook confirmation code', '')
         return session
 ugen = []
-for xd in range(1000):
-	a='Mozilla/5.0 (Linux; Android'
-	b=random.choice(['4','5','6','7','8','9','10','11','12','13','14','15','16'])
-	c='RMX3491 Build/RKQ1.211019.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/'
-	d=random.randrange(10,200)
-	e='0'
-	f=random.randrange(1000,8000)
-	g=random.randrange(10,200)
-	h='Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/392.2.0.33.108;]'
-	uaku2=(f'{a} {b};{c}{d}.{e}.{f}.{g} {h}')
-	ugen.append(uaku2)
+for xd in range(5000):
+    aa='Mozilla/5.0 (Linux; U; Android'
+    b=random.choice(['5','6','7','8','9','10','11','12'])
+    if b in ['5', '6', '7', '8', '9']:
+        z=random.choice(['0', '1'])
+        bv=b+'.'+z+'.'+z
+    else:
+        bv=b
+    B=['GT-', 'SM-']
+    c=random.choice(B)
+    d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+    e=random.randrange(1, 999)
+    f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+    g='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
+    h=random.randrange(73,100)
+    i='0'
+    j=random.randrange(4200,4900)
+    k=random.randrange(40,150)
+    l='Mobile Safari/537.36'
+    application_version = str(random.randint(111,396))+'.0.0.'+str(random.randrange(10,49))+'.'+str(random.randint(111,396))
+    V=str(random.randrange(11,99))
+    uas=f'{aa} {bv}; {c}{d}{e}{f} Build/{d}{f}{V}{f}; wv) {g}{h}.{i}.{j}.{k} {l}'
+    ugen.append(uas)
 logo4 = """
 \x1b[1;91m
 \x1b[1;92m
@@ -214,7 +226,6 @@ class create:
                     "guid": "",
                     "pre_form_step": "",
                 })
-                print(agent)
                 gett = self.ses.post('https://m.facebook.com'+ref['action'], headers=headers1, data=self.data)
                 getts = self.ses.get('https://m.facebook.com/login/save-device/?login_source=account_creation&logger_id='+loger+'&app_id=103', headers=headers1)
                 data1 = {}
