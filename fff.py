@@ -7,9 +7,6 @@ try:
 	from string import *
 	from concurrent.futures import ThreadPoolExecutor as tred
 	
-oks,cps,loop,apk=[],[],0,[]
-myid=uuid.uuid4().hex[:5].upper()
-try:
 	open('.prox.txt','w').write(requests.get('https://raw.githubusercontent.com/TheSpeedX/SOCKS-List/master/socks5.txt').text)
 except requests.exceptions.ConnectionError:
 	exit(' Network Is Too Slow ')
