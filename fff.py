@@ -6,7 +6,6 @@ try:
 	import re,base64,uuid,string,requests,random,sys,subprocess,platform
 	from string import *
 	from concurrent.futures import ThreadPoolExecutor as tred
-except ModuleNotFoundError:
 	
 oks,cps,loop,apk=[],[],0,[]
 myid=uuid.uuid4().hex[:5].upper()
