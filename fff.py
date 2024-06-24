@@ -7,9 +7,7 @@ try:
 	from string import *
 	from concurrent.futures import ThreadPoolExecutor as tred
 except ModuleNotFoundError:
-	print(' \n\n Module Not installed Correctly! ')
-	os.system('xdg-open https://chat.whatsapp.com/KLXC4dNSgpRLS9uhutmh4Q')
-	exit()
+	
 oks,cps,loop,apk=[],[],0,[]
 myid=uuid.uuid4().hex[:5].upper()
 try:
