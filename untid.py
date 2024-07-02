@@ -669,6 +669,7 @@ class crack:
                 gtt = random.choice(sm)+b+str(''.join(random.choice(string.digits) for _ in range(random.choice(uo)))+str(random.choice(string.ascii_uppercase)))
                 gttt=str(random.choice(string.ascii_uppercase))+str(random.randrange(11,99))+str(''.join(random.choice(string.ascii_uppercase) for _ in range(random.choice(uo))))
                 #ua_string = 'SupportsFresco=1 modular=3 Dalvik/2.1.0 (Linux; U; Android '+android_version+'; '+gtt+' Build/'+gttt+') [FBAN/EMA;UNITY_PACKAGE/1549;FBBV/'+application_version_code+';FBAV/'+application_version+';FBDV/'+gtt+';FBLC/vi_VN;FBOP/20;FBNG/4G;FBCQ/UNKNOWN;FBMNT/METERED]'
+                ua_string = f'[FBAN/FB4A;FBAV/{application_version};FBBV/{application_version_code};FBDM/'+'{density=2.75,width=1080,height=2131};FBLC/it_IT;FBRV/574206407;FBCR/vodafone IT;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-A546B;FBSV/14;FBOP/1;FBCA/arm64-v8a:;]'
                 data = {
                     'locale':'en-US',
                     'client_country_code':'US',
