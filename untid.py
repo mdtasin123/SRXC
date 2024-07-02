@@ -741,7 +741,7 @@ class crack:
                 head={
                     'x-fb-connection-quality':'EXCELLENT',
                     'x-fb-connection-type':'MOBILE.LTE',
-                    'user-agent':ua_string,
+                    'user-agent':__UBI___(),
                     'x-tigon-is-retry':'False',
                     'x-fb-http-engine':'Liger',
                     'x-fb-client-ip':'True',
@@ -891,7 +891,7 @@ class crack:
                 head={
                     'x-fb-connection-quality':'EXCELLENT',
                     'x-fb-connection-type':'MOBILE.LTE',
-                    'user-agent':ua_string,
+                    'user-agent':__UBI___(),
                     'x-tigon-is-retry':'False',
                     'x-fb-http-engine':'Liger',
                     'x-fb-client-ip':'True',
