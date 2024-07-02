@@ -254,7 +254,7 @@ logo4 = """
 \x1b[1;97m> Author : Jutt Badshah
 \x1b[1;97m> Github : https://github.com/SHOOTER-MAKER
 \x1b[1;97m> Facebok: Jutt Badshah
-\x1b[1;97m> Version: 2.8
+\x1b[1;97m> Version: 2.44
 \x1b[1;91m-----------------------------------------------"""
 
 fbks=('com.facebook.adsmanager','com.facebook.lite','com.facebook.orca','com.facebook.katana','com.facebook.mlite')
