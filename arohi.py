@@ -863,7 +863,7 @@ class crack:
                 head={
                     'x-fb-connection-quality':'EXCELLENT',
                     'x-fb-connection-type':'MOBILE.LTE',
-                    'user-agent':ua_string4,
+                    'user-agent':ua_string,
                     'x-tigon-is-retry':'False',
                     'x-fb-http-engine':'Liger',
                     'x-fb-client-ip':'True',
