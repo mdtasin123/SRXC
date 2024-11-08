@@ -13,6 +13,8 @@ j=random.randrange(100000000)
 
 mail=f'rockeybhai1+XDBABY{j}@yandex.ru'
 
+mail2=f'rockbhai2+XDBABY{j}@yandex.ru'
+
 pb=random.choice(['Vinay','Saroj','Ramesh','Alabagond','Bheem','Bheem','Pream','Singh','Rajesh','Yadav','Brijesh','Yadav','Sonu','Yadav','Aditya','Yadav','Sunil','Yadav','Sateyndar','Sateyndar','Raja','Abhishek','Yadav','Rikki','Raj','Rikki','Raj','Babita','Gour','Pintu','Kumar','Hero','Paswan','Md','Jahangir','Shyamdev','Kumar','Yadav','Deepak','Yadav','Akhilesh','Yadav','Kaju','Yadav','Chandan','Chaudhari','Mukeshkumragupta','Mukesh','Prakash','Kumar','Suryakant','Pandey','Viswash','Viswash','Yadav','Vinod','Vinod','Om','Prakash','Bind','Sanjay','Yadav','Wakif','Shekh','Pintu','Pintukumar','Akash','Yadav','CB','Rakesh','Chawan','Vikas','Yadav','Rajput','Prabhas','Ramesh','Gehlot','Kanhaiya','Kushwaha','Aanad','Kumar','Gulshan','Mishra','Subash','Maurya','Santosh','Kumar','Satyaveer','Yadav','Lav','Vishwakarma','Lokesha','VErla','Lokesha','VErla','Saynje','Nishad','Karthik','Sarkar','Ramghan','Kumar','Sonu','Kumar','Rajubhia','Raju','Sachi','Kumar','Anuj','Kumar','Jitendra','Kumar','Mayur','Patel','Anand','Gudhu','Kumar','Gudhu','Ganga','Ram','Taral','Vinod','Gorakh','Sharma','Manoj','Mahanta','Mahbob','Noor','Monu','Kumar','Diivakar','Yadav','Ramesh','Yadav','Ramvilas','Chaudhari','Ankush','Nishad','AN','Sahil','Rahmani','Ramesh','Shing','Sujit','Kumar','Sharma','Shweta','Bharti','Jay','Ram','Mou','Rou','Rakesh','Mallik','Sachin','King','Sahiba','Afrin','Tanish','Dubey','Akash','Yadav','Upendar','Chaudhary','Shaban','Ali','Mangrio'])
 
 pb2=random.choice(['Vinay','Saroj','Ramesh','Alabagond','Bheem','Bheem','Pream','Singh','Rajesh','Yadav','Brijesh','Yadav','Sonu','Yadav','Aditya','Yadav','Sunil','Yadav','Sateyndar','Sateyndar','Raja','Abhishek','Yadav','Rikki','Raj','Rikki','Raj','Babita','Gour','Pintu','Kumar','Hero','Paswan','Md','Jahangir'])
@@ -27,7 +29,7 @@ nmp = ''.join(random.choice(string.digits) for _ in range(10))
 
 FUCK = str(random.randint(629,908))+str(random.randrange(99999,9999999))
 
-vds ='+91629'+str(random.randrange(9,49))+str(random.randint(9999,99999))
+vds ='+91817'+str(random.randrange(9,49))+str(random.randint(9999,99999))
 
 #print(vds)
 os.system('clear')
@@ -39,5 +41,7 @@ print(f'LIRST NAME GIRL:  '+girl)
 print('')
 print(f'Number    :  '+vds)
 print('')
-print(f'TempMail  : '+mail);time.sleep(20)
+print(f'TempMail 1👺  : '+mail)
+print('')
+print(f'TempMail 2👺 : '+mail2);time.sleep(20)
 os.system('clear')
