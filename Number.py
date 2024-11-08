@@ -30,6 +30,7 @@ FUCK = str(random.randint(629,908))+str(random.randrange(99999,9999999))
 vds ='+91629'+str(random.randrange(9,49))+str(random.randint(9999,99999))
 
 #print(vds)
+os.system('clear')
 print('XD-BOY')
 print('')
 print(f'FIRST NAME BOY:   '+boy)
